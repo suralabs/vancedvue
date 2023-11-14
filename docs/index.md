@@ -17,7 +17,7 @@ hero:
       link: /pages/getting-started
     - theme: alt
       text: View on GitHub
-      link: https://github.com/suralabs/fire-ui
+      link: https://github.com/suralabs/vancedvue
 
 features:
   - title: Vue 3 components 🧱

@@ -52,15 +52,15 @@ module.exports = {
   title: 'Fire UI',
   description: 'Just playing around.',
   themeConfig: {
-    repo: 'https://github.com/suralabs/fire-ui',
+    repo: 'https://github.com/suralabs/vancedvue',
     logo: '/assets/logo.svg',
     sidebar: buildSidebar(),
     editLink: {
-      pattern: 'https://github.com/suralabs/fire-ui/tree/main/docs/:path',
+      pattern: 'https://github.com/suralabs/vancedvue/tree/main/docs/:path',
       text: 'Edit this page on GitHub'
     },    
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/suralabs/fire-ui' },
+      { icon: 'github', link: 'https://github.com/suralabs/vancedvue' },
     ],    
     footer: {
       message: 'Released under the MIT License.',
@@ -118,7 +118,7 @@ module.exports = {
   vite: {
     resolve: {
       alias: {
-        'fire-ui': path.resolve(__dirname, '../../src'),
+        'vancedvue': path.resolve(__dirname, '../../src'),
       },
       dedupe: ['vue', /vancedvue\/.+/], // avoid error when using dependencies that also use Vue
     }

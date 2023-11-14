@@ -7,9 +7,9 @@ module.exports = defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, './src/index.ts'),
-      name: 'fire-ui',
+      name: 'vancedvue',
       formats: ['es'], // adding 'umd' requires globals set to every external module
-      fileName: (format) => `fire-ui.${format}.js`,
+      fileName: (format) => `vancedvue.${format}.js`,
     },
     rollupOptions: {
       // external modules won't be bundled into your library

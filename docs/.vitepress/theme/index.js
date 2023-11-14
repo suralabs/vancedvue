@@ -1,6 +1,6 @@
 import DefaultTheme from 'vitepress/theme'
 import DemoContainer from '../components/DemoContainer.vue'
-import FireUI from 'fire-ui'
+import FireUI from 'vancedvue'
 
 
 // import 'primevue/resources/themes/saga-blue/theme.css'       //theme

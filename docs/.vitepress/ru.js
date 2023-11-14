@@ -14,7 +14,7 @@ export const ruConfig = {
 
   themeConfig: {
     editLink: {
-      pattern: 'https://github.com/suralabs/fire-ui/tree/main/docs/:path',
+      pattern: 'https://github.com/suralabs/vancedvue/tree/main/docs/:path',
       text: 'Предлагайте изменения на этой странице',
     },
 

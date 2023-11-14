@@ -4,7 +4,7 @@
 
 ## Установка
 
-Эта настройка предполагает, что ваше клиентское приложение создано с использованием шаблонов `Vite` и `vue-ts`, и вы используете `"npm link"` для локальной привязки к `fire-ui`.
+Эта настройка предполагает, что ваше клиентское приложение создано с использованием шаблонов `Vite` и `vue-ts`, и вы используете `"npm link"` для локальной привязки к `vancedvue`.
 
 В вашем `package.json` у вас должны быть зависимости, совместимые со следующими:
 
@@ -27,13 +27,13 @@ export default defineConfig({
 В свой `main.ts` вы должны импортировать библиотеки и CSS:
 
 ```ts
-import 'fire-ui/dist/style.css';
+import 'vancedvue/dist/style.css';
 ```
 
 Импортируйте компоненты из этой библиотеки в свой собственный компонент:
 
 ```html
 <script setup lang="ts">
-  import { Badge, Button } from 'fire-ui';
+  import { Badge, Button } from 'vancedvue';
 </script>
 ```

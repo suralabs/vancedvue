@@ -6,6 +6,7 @@
   "scripts": {
     "build": "rimraf dist && vue-tsc && vite build",
     "docs:dev": "vitepress dev docs",
+    "doc:dev": "cd doc && vite",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
@@ -22,8 +23,8 @@
     "sass": "^1.63.6",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.1.6",
-    "vite": "^4.3.9",
-    "vitepress": "1.0.0-rc.14",
+    "vite": "^4.5.0",
+    "vitepress": "1.0.0-rc.25",
     "vue-tsc": "^1.8.3"
   },
   "files": [
