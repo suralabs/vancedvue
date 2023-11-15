@@ -39,10 +39,10 @@ npm run docs:dev
 # build the library, available under dist
 npm run build
 
-# build the doc app, available under docs/.vitepress/dist
+# build the doc app, available under docs/dist
 npm run docs:build
 
-# preview the doc app locally from docs/.vitepress/dist
+# preview the doc app locally from docs/dist
 npm run docs:serve
 ```
 
@@ -78,7 +78,7 @@ The doc app itself is a client app of the libary, therefore `fire ui` is importe
 module.exports = {
   vite: {
     resolve: {
-      dedupe: ['vue', /fireui\/.+/],
+      dedupe: ['vue', /vancedvue\/.+/],
     },
   },
 }
@@ -136,7 +136,7 @@ If you expect the client app of your library may also need the same dependency, 
 ```js
 module.exports = defineConfig({
     rollupOptions: {
-      external: ['vue', /fireui\/.+/]
+      external: ['vue', /vancedvue\/.+/]
     }
   }
 })
