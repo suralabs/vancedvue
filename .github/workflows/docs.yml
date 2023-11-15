@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - run: npm ci
+      # - run: npm ci
       - run: npm run docs:build
       - uses: JamesIves/github-pages-deploy-action@v4
         with:
