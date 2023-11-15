@@ -5,10 +5,9 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && vue-tsc && vite build",
-    "docs:dev": "vitepress dev docs",
-    "doc:dev": "cd doc && vite",
-    "docs:build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs"
+    "docs:dev": "cd docs && vite",
+    "docs:build": "cd docs && vite build",
+    "docs:preview": "cd docs && vite preview"
   },
   "peerDependencies": {
     "vue": "^3.3.4"

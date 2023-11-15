@@ -17,7 +17,7 @@ import VButton from './v-button.vue'
 import VIcon from './v-icon.vue'
 import VAlert from './v-alert.vue'
 import VPagination from './v-pagination.vue'
-
+import VInput from './v-input.vue'
 
 export {
   Card,
@@ -38,4 +38,5 @@ export {
   VButton,
   VIcon,
   VAlert,
+  VInput,
 }
