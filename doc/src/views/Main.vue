@@ -5,9 +5,9 @@
         <h3 h3 class="relative text-2xl text-center md:text-left md:text-[1.7rem] lg:text-[2rem] font-semibold text-primary dark:text-white">VancedVue — части пользовательского интерфейса для VueJS.</h3>
         <p class="text-sm text-center md:text-left lg:text-base font-medium text-primary dark:text-white">Мы любим то, что мы делаем. Позвольте нам помочь вам заниматься тем, что вы любите.</p>
         <div class="flex items-center w-fit space-x-2 mx-auto md:mx-0">
-          <button class="btn btn__primary">Начать</button>
+          <button class=" btn__primary">Начать</button>
           <div class="flex items-center space-x-2">
-            <a target="_blank" href="https://github.com/suralabs/vancedvue" class="btn px-3 py-[0.60rem] relative bg-transparent dark:bg-darkSecondary border-2 border-gray-300 hover:border-gray-800 dark:border-gray-600 dark:hover:border-gray-200 flex items-center space-x-2 text-primary dark:text-white" rel="noreferrer">
+            <a target="_blank" href="https://github.com/suralabs/vancedvue" class=" px-3 py-[0.60rem] relative bg-transparent dark:bg-darkSecondary border-2 border-gray-300 hover:border-gray-800 dark:border-gray-600 dark:hover:border-gray-200 flex items-center space-x-2 text-primary dark:text-white" rel="noreferrer">
               <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
               </svg>
@@ -67,35 +67,35 @@
                 </div>
               </div>
               <div class="animation1 flex flex-col space-y-4">
-                <button class="btn p-2 text-white bg-[#ff4757] hover:drop-shadow-2xl hover:-translate-y-1">
+                <button class=" p-2 text-white bg-[#ff4757] hover:drop-shadow-2xl hover:-translate-y-1">
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>
                   </svg>
                 </button>
-                <button class="btn p-2 text-white bg-green-500 hover:drop-shadow-2xl hover:-translate-y-1">
+                <button class=" p-2 text-white bg-green-500 hover:drop-shadow-2xl hover:-translate-y-1">
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
                   </svg>
                 </button>
-                <button class="btn p-2 text-white bg-yellow-500 hover:drop-shadow-2xl hover:-translate-y-1">
+                <button class=" p-2 text-white bg-yellow-500 hover:drop-shadow-2xl hover:-translate-y-1">
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                     <g><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-1-5h2v2h-2v-2zm0-8h2v6h-2V7z"></path></g>
                   </svg>
                 </button>
               </div>
               <div class="animation1 flex flex-col space-y-4">
-                <button class="btn p-2 text-white bg-purple-500 hover:drop-shadow-2xl hover:-translate-y-1">
+                <button class=" p-2 text-white bg-purple-500 hover:drop-shadow-2xl hover:-translate-y-1">
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.978.855a.5.5 0 1 0-.956.29l.41 1.352A4.985 4.985 0 0 0 3 6h10a4.985 4.985 0 0 0-1.432-3.503l.41-1.352a.5.5 0 1 0-.956-.29l-.291.956A4.978 4.978 0 0 0 8 1a4.979 4.979 0 0 0-2.731.811l-.29-.956z"></path>
                     <path d="M13 6v1H8.5v8.975A5 5 0 0 0 13 11h.5a.5.5 0 0 1 .5.5v.5a.5.5 0 1 0 1 0v-.5a1.5 1.5 0 0 0-1.5-1.5H13V9h1.5a.5.5 0 0 0 0-1H13V7h.5A1.5 1.5 0 0 0 15 5.5V5a.5.5 0 0 0-1 0v.5a.5.5 0 0 1-.5.5H13zm-5.5 9.975V7H3V6h-.5a.5.5 0 0 1-.5-.5V5a.5.5 0 0 0-1 0v.5A1.5 1.5 0 0 0 2.5 7H3v1H1.5a.5.5 0 0 0 0 1H3v1h-.5A1.5 1.5 0 0 0 1 11.5v.5a.5.5 0 1 0 1 0v-.5a.5.5 0 0 1 .5-.5H3a5 5 0 0 0 4.5 4.975z"></path>
                   </svg>
                 </button>
-                <button class="btn p-2 text-[#ff4757] bg-white hover:drop-shadow-2xl hover:-translate-y-1">
+                <button class=" p-2 text-[#ff4757] bg-white hover:drop-shadow-2xl hover:-translate-y-1">
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"></path>
                   </svg>
                 </button>
-                <button class="btn p-2 text-white bg-[#0081c2] hover:drop-shadow-2xl hover:-translate-y-1">
+                <button class=" p-2 text-white bg-[#0081c2] hover:drop-shadow-2xl hover:-translate-y-1">
                   <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" class="text-xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"></path>
                   </svg>

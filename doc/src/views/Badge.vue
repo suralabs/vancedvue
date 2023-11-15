@@ -14,8 +14,13 @@
 			</div>
 			<Preview anchor="default" name="Default" 
 			description="The most commonly used button styles.">
-				<v-button color="default">Default</v-button>
-				<v-button color="default" disabled="disabled">Disabled</v-button>
+			<v-badge>Default</v-badge>
+			<v-badge color="dark">dark</v-badge>
+			<v-badge color="green">Green</v-badge>
+			<v-badge color="red">red</v-badge>
+			<v-badge color="yellow">yellow</v-badge>
+			<v-badge color="purple">purple</v-badge>
+			<v-badge color="pink">pink</v-badge>
 			</Preview>
 		</div>
 	</div>

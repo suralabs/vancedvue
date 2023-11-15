@@ -12,9 +12,9 @@ const sizeable = {
         return {
             sizes: {
                 xs: 'h-8 w-8',
-                sm: 'h-16 w-16',
-                md: 'h-24 w-24',
-                lg: 'h-32 w-32',
+                sm: 'h-10 w-10',
+                md: 'h-20 w-20',
+                lg: 'h-36 w-36',
                 full: "full h-full w-full",
             },
         }

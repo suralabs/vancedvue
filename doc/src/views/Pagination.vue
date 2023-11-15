@@ -14,9 +14,18 @@
 			</div>
 			<Preview anchor="default" name="Default" 
 			description="The most commonly used button styles.">
-				<v-button color="default">Default</v-button>
-				<v-button color="default" disabled="disabled">Disabled</v-button>
+				<v-pagination v-model="currentPage" :totalPages="100" />
 			</Preview>
+
+			<Preview anchor="default" name="Default" 
+			description="The most commonly used button styles.">
+			<v-pagination
+        v-model="currentPage"
+        :layout="'table'"
+        :perPage="10"
+        :totalItems="998">
+    </v-pagination>
+			</Preview>			
 		</div>
 	</div>
 </template>
@@ -31,6 +40,7 @@ export default {
   },
   data() {
     return {
+			currentPage: 1,
     }
   },
 }

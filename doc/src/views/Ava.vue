@@ -14,8 +14,12 @@
 			</div>
 			<Preview anchor="default" name="Default" 
 			description="The most commonly used button styles.">
-				<v-button color="default">Default</v-button>
-				<v-button color="default" disabled="disabled">Disabled</v-button>
+				<!-- <v-avatar :src="ava_1"></v-avatar> -->
+
+				<v-avatar :src="ava_1" size="xs"></v-avatar>
+				<v-avatar :src="ava_1" size="sm"></v-avatar>
+				<v-avatar :src="ava_1" size="md"></v-avatar>
+				<v-avatar :src="ava_1" size="lg"></v-avatar>
 			</Preview>
 		</div>
 	</div>
@@ -23,6 +27,7 @@
 <script>
 import Code from '@/components/Code.vue'
 import Preview from '@/components/Preview.vue'
+import ava_1 from "../assets/images/foto1.png";
 
 export default {
   components: {
@@ -31,6 +36,7 @@ export default {
   },
   data() {
     return {
+			ava_1,
     }
   },
 }

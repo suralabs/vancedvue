@@ -1,9 +1,4 @@
-import ComponentA from './ComponentA.vue'
-import ComponentB from './ComponentB.vue'
-import Button from './Button.vue'
-import Badge from './Badge.vue'
-import Alert from './Alert.vue'
-import Avatar from './Avatar.vue'
+
 import Card from './Card.vue'
 import Dropdown from './Dropdown.vue'
 import Navbar from './Navbar.vue'
@@ -14,16 +9,17 @@ import FooterLinkGroup from './FooterLinkGroup.vue'
 import FooterLink from './FooterLink.vue'
 import FooterBrand from './FooterBrand.vue'
 import Modal from './Modal.vue'
-import Paginate from './Paginate.vue'
 import Tooltipe from './Tooltipe.vue'
 
+import VBadge from './v-badge.vue'
+import VAvatar from './v-avatar.vue'
+import VButton from './v-button.vue'
+import VIcon from './v-icon.vue'
+import VAlert from './v-alert.vue'
+import VPagination from './v-pagination.vue'
+
+
 export {
-  ComponentA,
-  ComponentB,
-  Button,
-  Badge,
-  Alert,
-  Avatar,
   Card,
   Dropdown,
   Navbar,
@@ -34,6 +30,12 @@ export {
   FooterLink,
   FooterBrand,
   Modal,
-  Paginate,
+  VPagination,
   Tooltipe,
+
+  VBadge,
+  VAvatar,
+  VButton,
+  VIcon,
+  VAlert,
 }

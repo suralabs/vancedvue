@@ -47,7 +47,7 @@
   </template>
   <script lang="ts" setup>
   import { computed } from 'vue'
-  import type { PropType } from 'vue'
+  // import type { PropType } from 'vue'
 //   import type { PaginationLayout } from '@/components/Pagination/types'
   // import type { PaginationLayout } from '../utils/types'
   
