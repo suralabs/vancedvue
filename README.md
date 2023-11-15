@@ -39,10 +39,10 @@ npm run docs:dev
 # build the library, available under dist
 npm run build
 
-# build the doc app, available under docs/.vitepress/dist
+# build the doc app, available under docs/dist
 npm run docs:build
 
-# preview the doc app locally from docs/.vitepress/dist
+# preview the doc app locally from docs/dist
 npm run docs:serve
 ```
 
