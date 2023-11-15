@@ -1,3 +1,14 @@
+
+
+<template>
+<div :class="card_variant()">
+    <img v-if="imgSrc" :class="horizontalImg()" :src="imgSrc" :alt="imgAlt"/>
+    <div class="p-6">
+      <slot />
+    </div>
+</div>
+</template>
+
 <script>
 export default {
     name: 'Card',
@@ -79,15 +90,6 @@ export default {
     },
 };
 </script>
-
-<template>
-<div :class="card_variant()">
-    <img v-if="imgSrc" :class="horizontalImg()" :src="imgSrc" :alt="imgAlt"/>
-    <div class="p-6">
-      <slot />
-    </div>
-</div>
-</template>
 
 <style lang="scss" scoped>
 </style>
