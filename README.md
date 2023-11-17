@@ -1,91 +1,66 @@
-<img src="https://github.com/suralabs/vancedvue/blob/main/art/ui-components.png?raw=true" width="100%" />
+<p align="center">
+<img src="https://github.com/suralabs/vancedvue/blob/v1.0.0/docs/public/assets/image/logo.png?raw=true" alt="vancedvue-logo.png">
+</p>
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![License][license-src]][license-href]
+<p align="center">
+<a href="https://github.com/suralabs/vancedvue"><img src="https://github.com/suralabs/vancedvue/workflows/CI/badge.svg" alt="Build Status"></a>
+<a href="https://coveralls.io/github/suralabs/vancedvue?branch=dev"> <img src="https://coveralls.io/repos/github/suralabs/vancedvue/badge.svg?branch=dev" alt="Coverage Status"></a>
+<a href="https://www.npmjs.com/package/vancedvue"><img src="https://badgen.net/npm/dm/vancedvue" alt="NPM Downloads"></a>
+<a href="https://www.npmjs.com/package/vancedvue"><img src="https://badgen.net/npm/v/vancedvue" alt="NPM Version"></a>
+<a href="https://github.com/suralabs/vancedvue"><img src="https://badgen.net/github/license/suralabs/vancedvue" alt="License"></a>
+</p>
 
-# What is VancedVue?
 
-Fully styled and customizable components for Vue 3
+## Introduction
 
-This package has been developed by the suralabs, its goal is to provide everything related
-to UI when building a Vue app. This includes components, icons, colors, dark mode but also keyboard shortcuts.
+**vancedvue** is a Bootstrap 3 component lib implemented by Vue.
 
-# Features
+* **Lightweight**
+  * All components **~20KB** Gziped.
+  * No extra CSS file.
+  * Individually import supported.
+* Vue 3 supported.
+* **SSR** (server-side rendering) supported.
 
--  Built with Headless UI and Tailwind CSS
--  Dark mode support
--  Support for LTR and RTL languages
--  Keyboard shortcuts
--  Icons
--  Fully typed
+If this project has helped you out, please support it with a star :star2:.
 
-## Setup
+## Versions
 
-Use npm to install.
+| vancedvue version | Vue.js version | document                                                                                           |
+|-------------|----------------|----------------------------------------------------------------------------------------------------------|
+| 1.x         | 3.x            | [https://github.com/semyon492/vancedvue/tree/v1.0.0](https://github.com/semyon492/vancedvue/tree/v1.0.0) |
 
+## Quick start
+
+```bash
+$ npm i vancedvue --save
 ```
-npm i vancedvue
-```
 
-### Full Import
-
-If you don’t care about the bundle size so much, it’s more convenient to use full import.
-
-
-```ts
-// main.ts
+```javascript
+// main.js
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { createApp } from 'vue'
-import VancedVue from 'vancedvue'
-import 'vancedvue/dist/style.css';
-import App from './App.vue'
+import * as vancedvue from 'vancedvue'
 
-const app = createApp(App)
+const app = createApp({ ... })
 
-app.use(VancedVue)
-app.mount('#app')
+app.use(vancedvue)
+
+app.mount(...)
 ```
 
-### Manually import
+For more information, pls visit [https://github.com/semyon492/vancedvue/usage/getting-started.html](https://github.com/semyon492/vancedvue/usage/getting-started.html)
 
-Stellar UI provides out of box Tree Shaking functionalities based on ES Module.
+## Changelog
 
-```html
-<script setup lang="ts">
-  import { SButton } from 'vancedvue';
-</script>
+Detailed changes for each release are documented in the [release notes](https://github.com/suralabs/vancedvue/releases).
 
-<template>
-    <SButton>Submit</SButton>
-</template>
-```
+## Special thanks
 
-
-## Documentation
-
-Visit https://semyon492.github.io/vancedvue/ to explore the documentation.
-
-
-## Credits
-
-- [nuxtlabs/ui](https://github.com/nuxtlabs/ui)
-- [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss)
-- [tailwindlabs/headlessui](https://github.com/tailwindlabs/headlessui)
-- [vueuse/vueuse](https://github.com/vueuse/vueuse)
-- [@iconify/tailwind](https://github.com/iconify/iconify/tree/main/plugins/tailwind)
-
+<p>
+<a href="https://code.visualstudio.com/?from=vancedvue"><img width="250" src="https://code.visualstudio.com/assets/images/code-stable.png" alt="vc-logo.png"></a>
+</p>
 
 ## License
 
-Licensed under the [MIT license](https://github.com/suralabs/vancedvue/blob/main/LICENSE).
-
-
-<!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/vancedvue/latest.svg?style=flat&colorA=18181B&colorB=6466E9
-[npm-version-href]: https://npmjs.com/package/vancedvue
-
-[npm-downloads-src]: https://img.shields.io/npm/dm/vancedvue.svg?style=flat&colorA=18181B&colorB=6466E9
-[npm-downloads-href]: https://npmjs.com/package/vancedvue
-
-[license-src]: https://img.shields.io/github/license/suralabs/vancedvue.svg?style=flat&colorA=18181B&colorB=6466E9
-[license-href]: https://github.com/suralabs/vancedvue/blob/main/LICENSE
+MIT

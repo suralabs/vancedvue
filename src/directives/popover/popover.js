@@ -1,0 +1,73 @@
+import { h, render } from 'vue';
+import Popover from '../../components/popover/Popover.vue';
+import { hasOwnProperty } from '../../utils/object.utils';
+
+const INSTANCE = '_vancedvue_popover_instance';
+
+const mounted = (el, binding) => {
+  // console.log('bind')
+  unmounted(el);
+  const options = [];
+  for (const key in binding.modifiers) {
+    if (hasOwnProperty(binding.modifiers, key) && binding.modifiers[key]) {
+      options.push(key);
+    }
+  }
+  let placement, trigger, enterable;
+  options.forEach((option) => {
+    if (/(top)|(left)|(right)|(bottom)/.test(option)) {
+      placement = option;
+    } else if (/(hover)|(focus)|(click)/.test(option)) {
+      trigger = option;
+    } else if (/unenterable/.test(option)) {
+      enterable = false;
+    }
+  });
+  const vNode = h(Popover, {
+    target: el,
+    appendTo: binding.arg && '#' + binding.arg,
+    title:
+      binding.value && binding.value.title && binding.value.title.toString(),
+    positionBy:
+      binding.value &&
+      binding.value.positionBy &&
+      binding.value.positionBy.toString(),
+    content:
+      binding.value &&
+      binding.value.content &&
+      binding.value.content.toString(),
+    viewport:
+      binding.value &&
+      binding.value.viewport &&
+      binding.value.viewport.toString(),
+    customClass:
+      binding.value &&
+      binding.value.customClass &&
+      binding.value.customClass.toString(),
+    enterable,
+    placement,
+    trigger,
+  });
+
+  const container = document.createElement('div');
+  render(vNode, container);
+  el[INSTANCE] = container;
+};
+
+const unmounted = (el) => {
+  // console.log('unbind')
+  const instance = el[INSTANCE];
+  if (instance) {
+    render(null, instance);
+  }
+  delete el[INSTANCE];
+};
+
+const updated = (el, binding) => {
+  // console.log('update')
+  if (binding.value !== binding.oldValue) {
+    mounted(el, binding);
+  }
+};
+
+export default { mounted, unmounted, updated };
