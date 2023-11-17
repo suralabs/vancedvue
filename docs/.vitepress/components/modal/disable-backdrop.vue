@@ -1,0 +1,13 @@
+<template>
+  <Btn type="primary" @click="open = true">Disable Backdrop</Btn>
+  <Modal v-model="open" title="Modal Title" :backdrop="false">
+    <p>This is a modal that can not close by backdrop click.</p>
+  </Modal>
+</template>
+
+<script setup>
+import { Modal, Btn } from 'vancedvue';
+import { ref } from 'vue';
+
+const open = ref(false);
+</script>

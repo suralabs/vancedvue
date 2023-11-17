@@ -1,24 +1,33 @@
-# Introduction
+---
+layout: home
 
-Fully styled and customizable components for Vue 3.
+hero:
+  name: vancedvue
+  text: Bootstrap 3 Components implemented by Vue.
+  tagline: 
+  image:
+    src: /assets/image/logo.png
+    alt: vancedvue
+  actions:
+    - theme: brand
+      text: Get Started
+      link: /usage/getting-started
+    - theme: alt
+      text: View on GitHub
+      link: https://github.com/suralabs/vancedvue
 
-This module has been developed by the [minasyan.info](https://minasyan.info) team, its goal is to provide everything
-related
-to UI when building a Vue app. This includes components, icons, colors, dark mode but also keyboard shortcuts.
+features:
+- icon: <svg width="32" height="32"><path fill="#41b883" d="M24.4 3.925H30l-14 24.15L2 3.925h10.71l3.29 5.6 3.22-5.6Z"/><path fill="#41b883" d="m2 3.925 14 24.15 14-24.15h-5.6L16 18.415 7.53 3.925Z"/><path fill="#35495e" d="M7.53 3.925 16 18.485l8.4-14.56h-5.18L16 9.525l-3.29-5.6Z"/></svg>
+  title: Vue 3 supported.
+  details: Easy to use and upgrade.
+- icon: ✨
+  title: Lightweight
+  details: All components ~20KB Gziped, no extra CSS file. Individually import is also supported.
+- icon: ⚡
+  title: Clean and elegant
+  details: We do not wrap everything, just those you really needed.
+- icon: 🚀
+  title: Ready for App
+  details: Not only Bootstrap components, but also something not included in Bootstrap, like Notification, Date-Picker...
+---
 
-## Features
-
-- Built with Headless UI and Tailwind CSS
-- Dark mode support
-- Support for LTR and RTL languages
-- Keyboard shortcuts
-- Icons
-- Fully typed
-
-## Credits
-
-- [nuxtlabs/ui](https://github.com/nuxtlabs/ui)
-- [tailwindlabs/tailwindcss](https://github.com/tailwindlabs/tailwindcss)
-- [tailwindlabs/headlessui](https://github.com/tailwindlabs/headlessui)
-- [vueuse/vueuse](https://github.com/vueuse/vueuse)
-- [@iconify/tailwind](https://github.com/iconify/iconify/tree/main/plugins/tailwind)

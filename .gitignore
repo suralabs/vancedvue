@@ -1,7 +1,9 @@
-node_modules
 .DS_Store
+node_modules/
+*.log
+coverage
+*.gz
+dist-docs/
+dist/
 .idea
-dist
-dist-ssr
-*.local
 docs/.vitepress/cache
