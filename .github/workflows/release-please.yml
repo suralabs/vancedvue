@@ -1,13 +1,30 @@
+name: Release
+
 on:
   push:
-    branches:
-      - main
+    branches: main
 
-name: release-please
 jobs:
-  release-please:
+
+  release:
+
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    outputs:
+      created: ${{ steps.release.outputs.created }}
+      version: ${{ steps.release.outputs.version }}
+
     steps:
-      - uses: google-github-actions/release-please-action@v3
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Release
+        id: release
+        uses: fdiesel/github-action-node-release@v4.1.5
         with:
-          release-type: node
+          token: ${{ secrets.GITHUB_TOKEN }}
+          prefix: v # (optional) default none
+          path: ./package.json # (optional) default ./package.json
