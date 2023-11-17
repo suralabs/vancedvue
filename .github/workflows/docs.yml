@@ -1,5 +1,8 @@
 on:
-  workflow_dispatch:
+on:
+  push:
+    # this might change depending on whether you are publishing a site for a normal repo or a user/organization repo
+    branches: [ main ]
 
 name: create-docs
 jobs:
