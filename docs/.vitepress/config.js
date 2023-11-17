@@ -3,8 +3,8 @@ const path = require('path')
 module.exports = {
     title: 'VancedVue',
     description: 'Fully styled and customizable components for Vue 3',
-    base: '/vancedvue/',
-    head: [['link', { rel: 'icon', href: '/vancedvue/favicon.ico' }]],
+    base: '/',
+    head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
     themeConfig: {
         repo: 'https://github.com/suralabs/vancedvue',
         logo: { light: '/logo-light.png', dark: '/logo-dark.png', alt: 'VancedVue Logo' },
