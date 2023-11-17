@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://static.wxsm.space/vancedvue/logo.png" alt="vancedvue-logo.png">
+<img src="https://github.com/suralabs/vancedvue/blob/v1.0.0/docs/public/assets/image/logo.png?raw=true" alt="vancedvue-logo.png">
 </p>
 
 <p align="center">
@@ -26,11 +26,9 @@ If this project has helped you out, please support it with a star :star2:.
 
 ## Versions
 
-| vancedvue version | Vue.js version | document                                               |
-|-------------|----------------|--------------------------------------------------------|
-| 2.x         | 3.x            | [https://vancedvue.wxsm.space](https://vancedvue.wxsm.space)       |
-| 1.x         | 2.x            | [https://vancedvue-v1.wxsm.space](https://vancedvue-v1.wxsm.space) |
-| 0.x         | 2.x            | [https://vancedvue-v0.wxsm.space](https://vancedvue-v0.wxsm.space) |
+| vancedvue version | Vue.js version | document                                                                                           |
+|-------------|----------------|----------------------------------------------------------------------------------------------------------|
+| 1.x         | 3.x            | [https://github.com/semyon492/vancedvue/tree/v1.0.0](https://github.com/semyon492/vancedvue/tree/v1.0.0) |
 
 ## Quick start
 
@@ -51,7 +49,7 @@ app.use(vancedvue)
 app.mount(...)
 ```
 
-For more information, pls visit [https://vancedvue.wxsm.space/usage/getting-started.html](https://vancedvue.wxsm.space/usage/getting-started.html)
+For more information, pls visit [https://github.com/semyon492/vancedvue/usage/getting-started.html](https://github.com/semyon492/vancedvue/usage/getting-started.html)
 
 ## Changelog
 
@@ -60,13 +58,8 @@ Detailed changes for each release are documented in the [release notes](https://
 ## Special thanks
 
 <p>
-<a href="https://www.jetbrains.com/?from=vancedvue"><img width="250" src="https://static.wxsm.space/others/jetbrains-logo.png" alt="jetbrains-logo.png"></a>
+<a href="https://code.visualstudio.com/?from=vancedvue"><img width="250" src="https://code.visualstudio.com/assets/images/code-stable.png" alt="vc-logo.png"></a>
 </p>
-
-## Project Stats
-
-![Alt](https://repobeats.axiom.co/api/embed/d61d9b2205de473d16574c9d78d7d067cfa3468f.svg "Repobeats analytics image")
-
 
 ## License
 
