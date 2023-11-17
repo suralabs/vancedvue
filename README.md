@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-[![lint and test](https://github.com/semyon492/vancedvue/actions/workflows/main.yaml/badge.svg)](https://github.com/semyon492/vancedvue/actions/workflows/main.yaml)
+<a href="https://github.com/suralabs/vancedvue"><img src="https://github.com/semyon492/vancedvue/actions/workflows/main.yaml/badge.svg" alt="Lint and test"></a>
 <a href="https://github.com/suralabs/vancedvue"><img src="https://github.com/suralabs/vancedvue/workflows/CI/badge.svg" alt="Build Status"></a>
 <a href="https://coveralls.io/github/suralabs/vancedvue?branch=dev"> <img src="https://coveralls.io/repos/github/suralabs/vancedvue/badge.svg?branch=dev" alt="Coverage Status"></a>
 <a href="https://www.npmjs.com/package/vancedvue"><img src="https://badgen.net/npm/dm/vancedvue" alt="NPM Downloads"></a>
