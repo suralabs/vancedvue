@@ -33,7 +33,6 @@ Then register vancedvue components and directives all at once in your app's entr
 
 ```javascript
 // main.js
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { createApp } from 'vue'
 import * as vancedvue from 'vancedvue'
 

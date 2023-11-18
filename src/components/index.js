@@ -18,6 +18,7 @@ export { default as ProgressBarStack } from './progressbar/ProgressBarStack.vue'
 export { default as Breadcrumbs } from './breadcrumbs/Breadcrumbs.vue';
 export { default as BreadcrumbItem } from './breadcrumbs/BreadcrumbItem.vue';
 export { default as Btn } from './button/Btn.vue';
+export { default as VButton } from './button/v-button.vue';
 export { default as BtnGroup } from './button/BtnGroup.vue';
 export { default as BtnToolbar } from './button/BtnToolbar.vue';
 export { default as MultiSelect } from './select/MultiSelect.vue';

@@ -29,13 +29,14 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "npm run docs:dev",
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
     "dist": "vite build -c build/vite.config.js && node build/single.js",
     "test": "jest --coverage",
     "test:watch": "npm test -- --watch",
     "lint": "eslint --ext .js,.vue src build docs/.vitepress",
-    "lint:fix": "npm run lint -- --fix"
+    "lint:fix": "npm run lint -- --fix",
+    "docs:preview": "vitepress preview docs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs"
   },
   "devDependencies": {
     "@babel/preset-env": "7.23.3",
@@ -65,9 +66,10 @@
     "sinon": "17.0.1",
     "tailwindcss": "^3.3.5",
     "vite": "5.0.0",
-    "vitepress": "1.0.0-rc.27",
+    "vitepress": "^1.0.0-rc.27",
     "vue": "3.3.8",
-    "vue-i18n": "9.7.0"
+    "vue-i18n": "9.7.0",
+    "vuepress": "^1.9.10"
   },
   "peerDependencies": {
     "vue": "^3"
