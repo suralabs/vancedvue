@@ -1,6 +1,6 @@
 {
   "name": "vancedvue",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Bootstrap 3 components implemented by Vue.",
   "author": "wxsm",
   "main": "./dist/vancedvue.umd.js",
