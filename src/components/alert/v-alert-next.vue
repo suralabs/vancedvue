@@ -3,9 +3,6 @@
     <div class="flex items-center">
       <slot v-if="icon != undefined || $slots.icon" name="icon">
         <v-icon name="info"/>
-        <!-- <svg class="f-shrink-0 lexw-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
-        </svg>         -->
       </slot>
       <slot name="title" />
     </div>
@@ -25,29 +22,15 @@
       type: 'info',
       closable: false,
       icon: false,
-      border: false,   
-      duration: { type: Number, default: 0 },
+      border: false,               
     },
     data() {
       return {
         visible: true,
-        timeout: 0,
       }
     },
-    mounted() {
-      this.startTimer()
-    },
-    unmounted() {
-      clearTimeout(this.timeout);
-    },
     methods: {
-      startTimer(){
-        if (this.duration > 0) {
-          this.timeout = setTimeout(this.onCloseClick, this.duration);
-        }
-      },
       onCloseClick () {
-        clearTimeout(this.timeout);
         this.$emit('close')
         this.visible = false
       },
@@ -73,6 +56,7 @@
           success: 'border-green-500 dark:text-green-400',
           warning: 'border-yellow-500 dark:text-yellow-400',
         }
+
         let colors = {
           danger: [alertTextClasses.danger, alertTypeClasses.danger].join(' '),
           dark: [alertTextClasses.dark, alertTypeClasses.dark].join(' '),
@@ -103,5 +87,6 @@
         ];
       }
     },
+
   }
 </script>

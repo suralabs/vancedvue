@@ -5,14 +5,11 @@
       </slot>
     </div>
     <slot >
-      <span>{{ label || '&nbsp;' }}</span>
     </slot>
     <div class="ml-2">
       <slot name="suffix">
       </slot>
-    </div>
-
-    
+    </div>    
   </button>
 </template>
 
@@ -26,10 +23,6 @@ export default {
     type: {
       type: String,
       default: 'button'
-    },
-    label: {
-      type: String,
-      default: null
     },
     disabled: {
       type: String,
@@ -75,7 +68,6 @@ export default {
         lg: 'px-5 py-2.5 text-lg',
         xl: 'px-6 py-3 text-xl',
       }
-
       return [
         this.class,
         !this.pill ? 'rounded-full' : 'rounded-lg',

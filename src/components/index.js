@@ -1,4 +1,5 @@
 export { default as VAlert } from './alert/v-alert.vue';
+export { default as VAlertNext } from './alert/v-alert-next.vue';
 export { default as VAvatar } from './avatar/v-avatar.vue';
 export { default as VAvatarGroup } from './avatar/v-avatar-group.vue';
 export { default as VButton } from './button/v-button.vue';
@@ -8,4 +9,3 @@ export { default as VInput } from './input/v-input.vue';
 export { default as VModal } from './modal/v-modal.vue';
 export { default as VDropdown } from './dropdown/v-dropdown.vue';
 export { default as VPagination } from './pagination/v-pagination.vue';
-export { default as VPaginationNext } from './pagination/v-pagination-next.vue';

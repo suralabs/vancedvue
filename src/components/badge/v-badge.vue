@@ -1,12 +1,9 @@
 <template>
   <span :class="classes()">
-    <slot>
-  
+    <slot>  
     </slot>
-  </span>
-  
-  </template>
-  
+  </span>  
+  </template>  
   <script >
   // import { sizeable } from "./mixins";
   export default {
@@ -15,8 +12,7 @@
       class: {
         type: String,
         default: null
-      }, 
-               
+      },                
       color: {
         type: String,
         default: 'default'
@@ -31,8 +27,7 @@
         }, 
       }
     },
-    mounted() {
-  
+    mounted() {  
     },
     methods: {
       classes() {
@@ -44,8 +39,7 @@
           yellow:  'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-300',
           purple:  'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-300',
           pink:    'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-300',
-        };
-        
+        };        
         return [
           `text-xs font-medium me-2 px-2.5 py-0.5 rounded`,
           colors[this.color],

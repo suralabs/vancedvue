@@ -95,6 +95,7 @@ function componentSidebar() {
       text: 'Overlays',
       items: [
         { text: 'Modal', link: '/components/overlays/modal' },
+        { text: 'Notification', link: '/components/overlays/notification' },
         // { text: 'Typeahead', link: '/components/typeahead' },
         // { text: 'Date Picker', link: '/components/date-picker' },
         // { text: 'Time Picker', link: '/components/time-picker' },

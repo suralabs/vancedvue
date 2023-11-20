@@ -8,13 +8,13 @@ Use any of the available button types to quickly create a styled button.
 
 <DemoContainer2>
   <v-button color="default">Default</v-button>
-  <v-button color="alternative">alternative</v-button>
-  <v-button color="dark">dark</v-button>
-  <v-button color="green">green</v-button>
-  <v-button color="red">red</v-button>
-  <v-button color="yellow">yellow</v-button>
-  <v-button color="purple">purple</v-button>
-  <v-button color="pink">pink</v-button>
+  <v-button color="alternative">Alternative</v-button>
+  <v-button color="dark">Dark</v-button>
+  <v-button color="green">Green</v-button>
+  <v-button color="red">Red</v-button>
+  <v-button color="yellow">Yellow</v-button>
+  <v-button color="purple">Purple</v-button>
+  <v-button color="pink">Pink</v-button>
 </DemoContainer2>
 
 <<< @/components/demo/button/Basic.vue
@@ -32,13 +32,13 @@ Use any of the available button types to quickly create a styled button.
 
 <DemoContainer2>
   <v-button color="default" pill>Default</v-button>
-  <v-button color="alternative" pill>alternative</v-button>
-  <v-button color="dark" pill>dark</v-button>
-  <v-button color="green" pill>green</v-button>
-  <v-button color="red" pill>red</v-button>
-  <v-button color="yellow" pill>yellow</v-button>
-  <v-button color="purple" pill>purple</v-button>
-  <v-button color="pink" pill>pink</v-button>
+  <v-button color="alternative" pill>Alternative</v-button>
+  <v-button color="dark" pill>Dark</v-button>
+  <v-button color="green" pill>Green</v-button>
+  <v-button color="red" pill>Red</v-button>
+  <v-button color="yellow" pill>Yellow</v-button>
+  <v-button color="purple" pill>Purple</v-button>
+  <v-button color="pink" pill>Pink</v-button>
 </DemoContainer2>
 
 <DemoContainer2>

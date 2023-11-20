@@ -35,8 +35,6 @@ Use any of the available button types to quickly create a styled button.
     :go-button="goButton"
     styled="centered"
   />    
-
-  <v-pagination-next /> 
 </DemoContainer>
 
 <<< @/components/demo/pagination/Basic.vue
