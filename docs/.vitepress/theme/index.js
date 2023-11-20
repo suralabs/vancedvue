@@ -1,6 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
 // import PrimeVue from 'primevue/config'
 import DemoContainer from '../components/DemoContainer.vue'
+import DemoContainer2 from '../components/DemoContainer2.vue'
 import * as VancedVue from 'vancedvue'
 // console.log(VancedVue)
 
@@ -17,5 +18,6 @@ export default {
     // app.use(PrimeVue)
     app.use(VancedVue)
     app.component('DemoContainer', DemoContainer)
+    app.component('DemoContainer2', DemoContainer2)
   }
 }

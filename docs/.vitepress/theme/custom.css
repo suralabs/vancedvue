@@ -138,7 +138,9 @@
 }
 
 .demo-container {
-  border: 1px solid lightgrey;
-  border-radius: 5px;
+  /* border: 1px solid lightgrey; */
+  /* border-radius: 5px; */
   padding: 10px 20px;
+  background-color: var(--vp-code-block-bg);
+
 }

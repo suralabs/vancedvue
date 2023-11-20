@@ -64,7 +64,12 @@ function componentSidebar() {
       text: 'Elements',
       items: [
         { text: 'Button', link: '/components/elements/button' },
-        // { text: 'Button Group', link: '/components/btn-group' },
+        { text: 'Alert', link: '/components/elements/alert' },
+        { text: 'Avatar', link: '/components/elements/avatar' },
+        { text: 'Badge', link: '/components/elements/badge' },
+        { text: 'Icon', link: '/components/elements/icon' },
+        { text: 'Dropdown', link: '/components/elements/dropdown' },
+        { text: 'Pagination', link: '/components/elements/pagination' },
         // { text: 'Collapse', link: '/components/collapse' },
       ],
     },
@@ -86,6 +91,16 @@ function componentSidebar() {
         // { text: 'Time Picker', link: '/components/time-picker' },
       ],
     },
+    {
+      text: 'Overlays',
+      items: [
+        { text: 'Modal', link: '/components/overlays/modal' },
+        // { text: 'Typeahead', link: '/components/typeahead' },
+        // { text: 'Date Picker', link: '/components/date-picker' },
+        // { text: 'Time Picker', link: '/components/time-picker' },
+      ],
+    },
+
     // {
     //   text: 'Notice',
     //   items: [
