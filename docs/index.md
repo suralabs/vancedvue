@@ -4,10 +4,10 @@ layout: home
 hero:
   name: vancedvue
   text: Bootstrap 3 Components implemented by Vue.
-  tagline: 
-  image:
-    src: /assets/image/logo.png
-    alt: vancedvue
+  # tagline: 
+  # image:
+  #   src: /assets/image/logo.png
+  #   alt: vancedvue
   actions:
     - theme: brand
       text: Get Started
