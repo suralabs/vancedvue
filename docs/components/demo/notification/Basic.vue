@@ -4,7 +4,9 @@
 </template>
 
 <script setup>
-import { Notification } from 'vancedvue';
+import { 
+  Notification
+ } from 'vancedvue';
 
 // example with callback
 // pass a String as the notification content

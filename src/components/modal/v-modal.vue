@@ -40,19 +40,26 @@
 </template>
 
 <script>
+import vIcon from '../icon/v-icon.vue'
+import vButton from '../button/v-button.vue'
+
 export default {
 	name:'Modal',
+	components: { 
+		vIcon,
+		vButton
+	},
 	props: {
 		show: Boolean,
 		modalName: String,
 		title: 'Title',
-		close: {
-      type: String,
-      default: 'Close'
-    },
 		size: String,
 		notEscapable: false,
   	persistent: false,
+		close: {
+      type: String,
+      default: 'Close'
+    },		
 	},
 	data() {
 		return {
