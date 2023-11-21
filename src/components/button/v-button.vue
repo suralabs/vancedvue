@@ -34,8 +34,8 @@ export default {
       default: 'md',
     },
     pill: {
-      // type: String,
-      default: 'false',
+      type: Boolean,
+      default: false,
     },
   },
   methods: {
