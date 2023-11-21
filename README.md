@@ -1,8 +1,8 @@
 <div align="center">
   <h1>VancedVue</h1>
   <p>
-    <a href="https://flowbite.com">
-      <img alt="Vancedvue - Tailwind CSS components" width="350" src="./docs/public/assets/image/logo.png">
+    <a href="https://vancedvue.vercel.app">
+      <img alt="Vancedvue - Tailwind CSS components" width="350" src="https://github.com/suralabs/vancedvue/blob/v1.0.0/docs/public/assets/image/logo.png?raw=true">
     </a>
   </p>
   <p>
