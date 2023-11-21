@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   title: 'VancedVue',
@@ -17,11 +17,11 @@ module.exports = {
   vite: {
     resolve: {
       alias: {
-        'vancedvue': path.resolve(__dirname, '../../src/index.js'),
+        vancedvue: path.resolve(__dirname, '../../src/index.js'),
       },
-    }
+    },
   },
-}
+};
 
 function navbar() {
   return [
@@ -43,7 +43,10 @@ function navbar() {
         { text: '0.x', link: 'https://github.com/suralabs/vancedvue' },
       ],
     },
-    { text: 'Changelog', link: 'https://github.com/suralabs/vancedvue/releases' },
+    {
+      text: 'Changelog',
+      link: 'https://github.com/suralabs/vancedvue/releases',
+    },
   ];
 }
 
@@ -51,9 +54,7 @@ function usageSidebar() {
   return [
     {
       text: 'Guide',
-      items: [
-        { text: 'Getting Started', link: '/usage/getting-started' },
-      ],
+      items: [{ text: 'Getting Started', link: '/usage/getting-started' }],
     },
   ];
 }

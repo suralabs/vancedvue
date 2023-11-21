@@ -1,12 +1,12 @@
 <script>
 import Notifys from '../demo/notification/Basic.vue'
 export default {
-	components: { 
+	components: {
     Notifys,
 	},
 }
 </script>
-# Notification 
+# Notification
 
 
 ## Examples

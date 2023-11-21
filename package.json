@@ -1,8 +1,8 @@
 {
   "name": "vancedvue",
-  "version": "1.0.3",
-  "description": "Bootstrap 3 components implemented by Vue.",
-  "author": "wxsm",
+  "version": "1.0.5",
+  "description": "Fully styled and customizable components for Vue 3",
+  "author": "suralabs",
   "main": "./dist/vancedvue.umd.js",
   "module": "./dist/vancedvue.es.js",
   "exports": {
@@ -25,12 +25,11 @@
   "bugs": {
     "url": "https://github.com/suralabs/vancedvue/issues"
   },
-  "homepage": "https://vancedvue.wxsm.space",
+  "homepage": "vancedvue.vercel.app",
   "scripts": {
     "start": "npm run dev",
     "dev": "npm run docs:dev",
     "dist": "vite build -c build/vite.config.js && node build/single.js",
-    "test": "jest --coverage",
     "test:watch": "npm test -- --watch",
     "lint": "eslint --ext .js,.vue src build docs/.vitepress",
     "lint:fix": "npm run lint -- --fix",
@@ -117,9 +116,9 @@
     "not ie <= 8"
   ],
   "keywords": [
-    "Bootstrap",
-    "Bootstrap 3",
-    "Bootstrap for Vue",
+    "Tailwind",
+    "Tailwindcss",
+    "Tailwindcss for Vue",
     "SSR",
     "Web",
     "Components",
@@ -131,19 +130,9 @@
     "vue-strap",
     "vuestrap",
     "CSS",
-    "Affix",
-    "MessageBox",
     "Notification",
-    "ScrollSpy",
     "Alert",
     "Button",
-    "Button group",
-    "Breadcrumbs",
-    "Carousel",
-    "Slider",
-    "Collapse",
-    "Dropdown",
-    "Nav",
     "Modal",
     "Navbar",
     "Pagination",

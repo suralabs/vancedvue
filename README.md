@@ -1,34 +1,47 @@
-<p align="center">
-<img src="https://github.com/suralabs/vancedvue/blob/v1.0.0/docs/public/assets/image/logo.png?raw=true" alt="vancedvue-logo.png">
-</p>
+<div align="center">
+  <h1>VancedVue</h1>
+  <p>
+    <a href="https://vancedvue.vercel.app">
+      <img alt="Vancedvue - Tailwind CSS components" width="350" src="https://github.com/suralabs/vancedvue/blob/v1.0.0/docs/public/assets/image/logo.png?raw=true">
+    </a>
+  </p>
+  <p>
+    Build websites even faster with components on top of Vue and Tailwind CSS
+  </p>
+  <p>
+    <a href="https://github.com/suralabs/vancedvue">
+      <img src="https://github.com/semyon492/vancedvue/actions/workflows/main.yaml/badge.svg" alt="Lint and test">
+    </a>
+    <a href="https://coveralls.io/github/suralabs/vancedvue?branch=dev"> 
+      <img src="https://coveralls.io/repos/github/suralabs/vancedvue/badge.svg?branch=dev" alt="Coverage Status">
+    </a>
+    <a href="https://www.npmjs.com/package/vancedvue">
+      <img src="https://badgen.net/npm/dm/vancedvue" alt="NPM Downloads">
+    </a>
+    <a href="https://www.npmjs.com/package/vancedvue">
+      <img src="https://badgen.net/npm/v/vancedvue" alt="NPM Version">
+    </a>
+    <a href="https://github.com/suralabs/vancedvue">
+      <img src="https://badgen.net/github/license/suralabs/vancedvue" alt="License">
+    </a>
+  </p>
+</div>
 
-<p align="center">
-<a href="https://github.com/suralabs/vancedvue"><img src="https://github.com/semyon492/vancedvue/actions/workflows/main.yaml/badge.svg" alt="Lint and test"></a>
-<a href="https://coveralls.io/github/suralabs/vancedvue?branch=dev"> <img src="https://coveralls.io/repos/github/suralabs/vancedvue/badge.svg?branch=dev" alt="Coverage Status"></a>
-<a href="https://www.npmjs.com/package/vancedvue"><img src="https://badgen.net/npm/dm/vancedvue" alt="NPM Downloads"></a>
-<a href="https://www.npmjs.com/package/vancedvue"><img src="https://badgen.net/npm/v/vancedvue" alt="NPM Version"></a>
-<a href="https://github.com/suralabs/vancedvue"><img src="https://badgen.net/github/license/suralabs/vancedvue" alt="License"></a>
-</p>
+---
 
+### `Vancedvue` is an open source collection of UI components, built in Vue, with utility classes from Tailwind CSS that you can use as a starting point for user interfaces and websites.
 
-## Introduction
+## Documentation
 
-**vancedvue** is a Bootstrap 3 component lib implemented by Vue.
+Documentation for `Vancedvue` is not yet finished.
 
-* **Lightweight**
-  * All components **~20KB** Gziped.
-  * No extra CSS file.
-  * Individually import supported.
-* Vue 3 supported.
-* **SSR** (server-side rendering) supported.
-
-If this project has helped you out, please support it with a star :star2:.
+If you want to browse the components, visit [vancedvue.vercel.app](vancedvue.vercel.app).
 
 ## Versions
 
 | vancedvue version | Vue.js version | document                                                                                           |
 |-------------|----------------|----------------------------------------------------------------------------------------------------------|
-| 1.x         | 3.x            | [https://github.com/semyon492/vancedvue/tree/v1.0.0](https://github.com/semyon492/vancedvue/tree/v1.0.0) |
+| 1.x         | 3.x            | [https://github.com/suralabs/vancedvue/tree/v1.0.4](https://github.com/suralabs/vancedvue/tree/v1.0.4) |
 
 ## Quick start
 
@@ -38,7 +51,6 @@ $ npm i vancedvue --save
 
 ```javascript
 // main.js
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { createApp } from 'vue'
 import * as vancedvue from 'vancedvue'
 
@@ -49,7 +61,7 @@ app.use(vancedvue)
 app.mount(...)
 ```
 
-For more information, pls visit [https://github.com/semyon492/vancedvue/usage/getting-started.html](https://github.com/semyon492/vancedvue/usage/getting-started.html)
+For more information, pls visit [https://vancedvue.vercel.app/usage/getting-started.html](https://vancedvue.vercel.app/usage/getting-started.html)
 
 ## Changelog
 

@@ -25,7 +25,6 @@ Use any of the available button types to quickly create a styled button.
   Your account was created 👌
   </v-alert>
 
-
   <v-alert icon type="info" closable>Info</v-alert>
   <v-alert icon type="danger" closable>Danger</v-alert>
   <v-alert icon type="dark" closable>Dark</v-alert>
@@ -38,11 +37,9 @@ Use any of the available button types to quickly create a styled button.
 
 <DemoContainer2>
   <v-alert  type="danger">New</v-alert>
-
   <v-alert closable icon type="info">
     Info
   </v-alert>
-
   <v-alert type="info">
     <template #icon>
       <v-icon name='info' size="24"/>

@@ -15,13 +15,13 @@ export default {
 </script>
 # Modal 
 
-Use the modal component to show interactive dialogs 
-and notifications to your website users 
+Use the modal component to show interactive dialogs
+and notifications to your website users
 available in multiple sizes, colors, and styles
 
-The modal component can be used as an interactive dialog 
-on top of the main content area of the website 
-to show notifications and gather information 
+The modal component can be used as an interactive dialog
+on top of the main content area of the website
+to show notifications and gather information
 using form elements from your website users.
 
 ## Examples
@@ -65,19 +65,19 @@ The default value is: `2xl`
   <Teleport to="body">
     <v-modal size="sm" :show="size1" title="Lorem ipsum" @onDismissed="size1 = false">
     </v-modal>
-  </Teleport>  
+  </Teleport>
    <Teleport to="body">
     <v-modal size="md" :show="size2" title="Lorem ipsum" @onDismissed="size2 = false">
     </v-modal>
-  </Teleport>  
+  </Teleport>
    <Teleport to="body">
     <v-modal size="xl" :show="size3" title="Lorem ipsum" @onDismissed="size3 = false">
     </v-modal>
-  </Teleport>  
+  </Teleport>
    <Teleport to="body">
     <v-modal size="5xl" :show="size4" title="Lorem ipsum" @onDismissed="size4 = false">
     </v-modal>
-  </Teleport>  
+  </Teleport>
   
 </DemoContainer>
 

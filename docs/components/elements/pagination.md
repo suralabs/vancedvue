@@ -34,7 +34,7 @@ Use any of the available button types to quickly create a styled button.
     @page-changed="updateHandler"
     :go-button="goButton"
     styled="centered"
-  />    
+  />
 </DemoContainer>
 
 <<< @/components/demo/pagination/Basic.vue
@@ -47,7 +47,7 @@ Use any of the available button types to quickly create a styled button.
     @pageChanged="updateHandler"
     :goButton="goButton"
     styled="centered"
-  />    
+  />
 </DemoContainer>
 
 <DemoContainer>
@@ -58,7 +58,7 @@ Use any of the available button types to quickly create a styled button.
     @pageChanged="updateHandler"
     :goButton="goButton"
     styled="simple"
-  />    
+  />
 </DemoContainer>
 
 <DemoContainer>
@@ -72,7 +72,7 @@ Use any of the available button types to quickly create a styled button.
   >
     <template #prev>⬅️</template>
     <template #next>➡️</template>
-  </v-pagination>    
+  </v-pagination>
 </DemoContainer>
 
 <DemoContainer>
@@ -86,7 +86,7 @@ Use any of the available button types to quickly create a styled button.
   >
     <template #prev>Previous</template>
     <template #next>Next</template>
-  </v-pagination>    
+  </v-pagination>
 </DemoContainer>
 
 <DemoContainer>
@@ -98,7 +98,7 @@ Use any of the available button types to quickly create a styled button.
     :goButton="goButton"
     styled="centered"
     size="xs"
-  />    
+  />
     <v-pagination
     :totalItems="totalItems"
     :currentPage="currentPage"
@@ -106,7 +106,7 @@ Use any of the available button types to quickly create a styled button.
     @pageChanged="updateHandler"
     :goButton="goButton"
     styled="centered"
-  />   
+  />
     <v-pagination
     :totalItems="totalItems"
     :currentPage="currentPage"
@@ -115,7 +115,7 @@ Use any of the available button types to quickly create a styled button.
     :goButton="goButton"
     styled="centered"
     size="xl"
-  />   
+  />
 </DemoContainer>
 
 <DemoContainer>
@@ -127,7 +127,7 @@ Use any of the available button types to quickly create a styled button.
     :goButton="goButton"
     styled="centered"
     :Label="Label"
-  />    
+  />
 </DemoContainer>
 
 #### Props

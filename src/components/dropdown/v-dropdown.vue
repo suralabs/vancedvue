@@ -1,7 +1,7 @@
 <template>
-<div class="inline-flex relative">
-  <div class="inline-flex items-center" >
-    <!-- <button class="text-white bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg dark:bg-blue-600 focus:outline-none dark:focus:ring-blue-800 hover:bg-blue-800 dark:hover:bg-blue-700 text-sm px-4 py-2 inline-flex items-center" href="" data-v-e40b6242="">
+  <div class="inline-flex relative">
+    <div class="inline-flex items-center">
+      <!-- <button class="text-white bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg dark:bg-blue-600 focus:outline-none dark:focus:ring-blue-800 hover:bg-blue-800 dark:hover:bg-blue-700 text-sm px-4 py-2 inline-flex items-center" href="" data-v-e40b6242="">
       <span class="">
         Top
       </span>
@@ -11,48 +11,50 @@
         </svg>
       </div>
     </button> -->
-    <v-button @click="showList">{{ text }}</v-button>
+      <v-button @click="showList">{{ text }}</v-button>
+    </div>
+    <div
+      v-if="show"
+      class="absolute z-10 bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700"
+      :style="stylePositionList()"
+    >
+      <slot>
+        <p class="p-2">Dropdown content here</p>
+      </slot>
+    </div>
   </div>
-  <div v-if="show" class="absolute z-10 bg-white divide-y divide-gray-100 rounded shadow dark:bg-gray-700" :style="stylePositionList()">
-    <slot>
-      <p class="p-2"> Dropdown content here </p>
-    </slot>
-  </div>
-</div>
 </template>
-  
-<script >
+
+<script>
 export default {
-  props: {             
+  props: {
     placement: {
       type: String,
-      default: 'top'
-    },     
+      default: 'top',
+    },
     text: {
       type: String,
-      default: 'Default'
-    },                
-  },
-	data() {
-		return {
-			show: false,
-		}
-	},
-  methods: {
-    showList(){
-      this.show = !this.show 
+      default: 'Default',
     },
-    stylePositionList(){
+  },
+  data() {
+    return {
+      show: false,
+    };
+  },
+  methods: {
+    showList() {
+      this.show = !this.show;
+    },
+    stylePositionList() {
       let positions = {
-        'top': 'top: -140px',
-        'left': 'right: 70px',
-        'right': 'left: 80px',
-        'bottom': 'right: -10px; top: 46px;',
-      }
-      return[
-        positions[this.placement],
-      ]
-    }
-  }
-}
+        top: 'top: -140px',
+        left: 'right: 70px',
+        right: 'left: 80px',
+        bottom: 'right: -10px; top: 46px;',
+      };
+      return [positions[this.placement]];
+    },
+  },
+};
 </script>

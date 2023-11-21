@@ -11,8 +11,8 @@
         <button disabled="false" :class="classesFirst(currentPage)" @click.prevent="changePage(currentPage - 1)">
           <slot name="prev">
             <span class="sr-only">Previous</span>
-            <v-icon name="previous" />  
-          </slot>      
+            <v-icon name="previous" />
+          </slot>
         </button>
         <button v-if="hasFirst()" @click.prevent="changePage(1)" :class="classesPage(1)">1</button>
         <button v-if="hasFirst()" :class="classesPage(1)">...</button>
@@ -24,8 +24,8 @@
         <button disabled="false" :class="classesLast(currentPage)" @click.prevent="changePage(currentPage + 1)">
           <slot name="next">
             <span class="sr-only">Next</span>
-            <v-icon name="next" />              
-          </slot>      
+            <v-icon name="next" />
+          </slot>
         </button>
       </div>
 
