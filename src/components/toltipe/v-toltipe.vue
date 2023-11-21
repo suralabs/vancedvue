@@ -23,7 +23,10 @@
 <script>
 export default {
   props: {
-    label: String,
+    label: {
+      type: String,
+      default: null,
+    },
     active: {
       type: Boolean,
       default: true,

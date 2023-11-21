@@ -37,15 +37,15 @@
 import vIcon from '../icon/v-icon.vue';
 
 export default {
+  components: { vIcon },
   props: {
-    type: info,
-    title: null,
-    closable: false,
-    icon: false,
-    border: false,
+    type: { type: String, default: 'info' },
+    title: { type: String, default: null },
+    closable: { type: Boolean, default: false },
+    icon: { type: Boolean, default: false },
     duration: { type: Number, default: 0 },
   },
-  components: { vIcon },
+  emits: ['close'],
   data() {
     return {
       visible: true,

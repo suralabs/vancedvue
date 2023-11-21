@@ -62,11 +62,10 @@ export default {
   },
   props: {
     show: Boolean,
-    modalName: String,
-    title: Title,
-    size: String,
-    notEscapable: false,
-    persistent: false,
+    title: { type: String, default: 'Title' },
+    size: { type: String, default: 'md' },
+    notEscapable: { type: Boolean, default: false },
+    persistent: { type: Boolean, default: false },
     close: {
       type: String,
       default: 'Close',
@@ -76,8 +75,6 @@ export default {
   data() {
     return {
       open: false,
-      btn_close_name: '',
-      box_size: 'md',
     };
   },
   watch: {
