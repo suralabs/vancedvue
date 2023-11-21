@@ -1,5 +1,4 @@
 export { default as VAlert } from './alert/v-alert.vue';
-export { default as VAlertNext } from './alert/v-alert-next.vue';
 export { default as VAvatar } from './avatar/v-avatar.vue';
 export { default as VAvatarGroup } from './avatar/v-avatar-group.vue';
 export { default as VButton } from './button/v-button.vue';

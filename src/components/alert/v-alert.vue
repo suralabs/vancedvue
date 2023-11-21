@@ -1,107 +1,93 @@
 <template>
-  <div v-if="visible" :class="wrapperClasses()" role="alert">
-    <div class="flex items-center">
-      <slot v-if="icon != undefined || $slots.icon" name="icon">
-        <v-icon name="info"/>
-        <!-- <svg class="f-shrink-0 lexw-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
-        </svg>         -->
-      </slot>
-      <slot name="title" />
+  <div v-if="visible" :class="newWrapperClasses()">
+    <div class="p-4">
+      <div class="flex items-start justify-between">
+        <div class="shrink-0">
+          <slot v-if="icon !== undefined || $slots.icon" name="icon">
+            <v-icon :name="type" size="24"/>
+          </slot>
+        </div>
+        <div class="ml-3 w-0 flex-1 pt-0.5">     
+          <p class="font-semibold">
+            {{ title || type }}
+          </p>
+          <p class="text-sm font-semibold">
+            <slot name="default" :on-close-click="onCloseClick" />
+          </p>
+        </div>
+        <div class="flex ml-4 shrink-0">       
+          <slot name="close-icon" :on-close-click="onCloseClick">
+            <button v-if="closable != undefined" type="button" @click="onCloseClick" class="inline-flex text-gray-400 rounded-md hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400">
+              <span class="sr-only">Close</span>
+              <v-icon name="close"/>
+            </button>
+          </slot>
+        </div>
+      </div>
     </div>
-    <slot name="default" :on-close-click="onCloseClick" />
-    <slot name="close-icon" :on-close-click="onCloseClick">
-      <button v-if="closable != undefined" type="button" :class="closeBtnClasses()" aria-label="Close" @click="onCloseClick">
-        <span class="sr-only">Dismiss</span>
-        <v-icon name="close"/>
-      </button>
-    </slot>
   </div>
 </template>
 
 <script>
-  export default {
-    props: {             
-      type: 'info',
-      closable: false,
-      icon: false,
-      border: false,   
-      duration: { type: Number, default: 0 },
-    },
-    data() {
-      return {
-        visible: true,
-        timeout: 0,
+import vIcon from '../icon/v-icon.vue'
+
+export default {
+  props: {             
+    type: 'info',
+    title: null,
+    closable: false,
+    icon: false,
+    border: false,   
+    duration: { type: Number, default: 0 },
+  },
+  components: { vIcon },
+  data() {
+    return {
+      visible: true,
+      timeout: 0,
+    }
+  },
+  mounted() {
+    this.startTimer()
+  },
+  unmounted() {
+    clearTimeout(this.timeout);
+  },
+  methods: {
+    startTimer(){
+      if (this.duration > 0) {
+        this.timeout = setTimeout(this.onCloseClick, this.duration);
       }
     },
-    mounted() {
-      this.startTimer()
-    },
-    unmounted() {
+    onCloseClick () {
       clearTimeout(this.timeout);
+      this.$emit('close')
+      this.visible = false
     },
-    methods: {
-      startTimer(){
-        if (this.duration > 0) {
-          this.timeout = setTimeout(this.onCloseClick, this.duration);
-        }
-      },
-      onCloseClick () {
-        clearTimeout(this.timeout);
-        this.$emit('close')
-        this.visible = false
-      },
-      wrapperClasses(){
-        let alertTextClasses = {
-          danger: 'text-red-800 dark:text-red-400',
-          dark: 'text-gray-800 dark:text-gray-300',
-          info: 'text-blue-800 dark:text-blue-400',
-          success: 'text-green-800 dark:text-green-400',
-          warning: 'text-yellow-800 dark:text-yellow-300',
-        }
-        const alertTypeClasses = {
-          danger: 'bg-red-50',
-          dark: 'bg-gray-50',
-          info: 'bg-blue-50',
-          success: 'bg-green-50',
-          warning: 'bg-yellow-50',
-        }
-        let borderColor = {
-          danger: 'border-red-500 dark:text-red-400',
-          dark: 'border-gray-500 dark:text-gray-400',
-          info: 'border-blue-500 dark:text-blue-400',
-          success: 'border-green-500 dark:text-green-400',
-          warning: 'border-yellow-500 dark:text-yellow-400',
-        }
-        let colors = {
-          danger: [alertTextClasses.danger, alertTypeClasses.danger].join(' '),
-          dark: [alertTextClasses.dark, alertTypeClasses.dark].join(' '),
-          info: [alertTextClasses.info, alertTypeClasses.info].join(' '),
-          success: [alertTextClasses.success, alertTypeClasses.success].join(' '),
-          warning: [alertTextClasses.warning, alertTypeClasses.warning].join(' '),
-        }
-        return [
-          'p-4 gap-3 text-sm dark:bg-gray-800 rounded-lg',
-          colors[this.type],
-          (this.icon != undefined || this.closable != undefined) && 'flex items-center',
-          borderColor[this.type],
-          this.border != undefined && 'border',
-        ]
-      },     
-      closeBtnClasses(){
-        const defaultCloseButtonClasses = 'ml-auto -mr-1.5 -my-1.5 rounded-lg focus:ring-2 p-1.5 inline-flex h-8 w-8 dark:bg-gray-800 dark:hover:bg-gray-700'
-        let closeButtonClasses = {
-          danger: 'text-red-500 dark:text-red-400 bg-red-50 hover:bg-red-200 focus:ring-red-400',
-          dark: 'text-gray-500 dark:text-gray-300 bg-gray-50 hover:bg-gray-200 focus:ring-gray-400 dark:hover:text-white',
-          info: 'text-blue-500 dark:text-blue-400 bg-blue-50 hover:bg-blue-200 focus:ring-blue-400',
-          success: 'text-green-500 dark:text-green-400 bg-green-50 hover:bg-green-200 focus:ring-green-400',
-          warning: 'text-yellow-500 dark:text-yellow-300 bg-yellow-50 hover:bg-yellow-200 focus:ring-yellow-400',
-        }
-        return [
-          defaultCloseButtonClasses, 
-          closeButtonClasses[this.type]
-        ];
+
+    newWrapperClasses(){
+      let textColors = {
+        danger: 'text-red-800 dark:text-red-400',
+        dark: 'text-gray-800 dark:text-gray-300',
+        info: 'text-blue-800 dark:text-blue-400',
+        success: 'text-green-800 dark:text-green-400',
+        warning: 'text-yellow-800 dark:text-yellow-300',
       }
+      return [
+        'bg-white dark:bg-gray-800 ring-black',
+        textColors[this.type],
+        'w-full max-w-sm mt-4 overflow-hidden rounded-lg shadow-lg pointer-events-auto ring-1 ring-opacity-5'
+      ]
     },
-  }
+    //     warning: [alertTextClasses.warning, alertTypeClasses.warning].join(' '),
+  },
+}
 </script>
+
+<style>
+.shadow-lg {
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / .1),0 4px 6px -4px rgb(0 0 0 / .1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+}
+</style>

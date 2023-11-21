@@ -17,12 +17,21 @@
 Use any of the available button types to quickly create a styled button.
 
 <DemoContainer>
-  <v-alert type="info" closable>Info</v-alert>
-  <v-alert type="danger" closable>Danger</v-alert>
-  <v-alert type="dark" closable>Dark</v-alert>
-  <v-alert type="success" closable>Success</v-alert>
-  <v-alert closable>Default</v-alert>
-  <v-alert type="warning" closable>Warning</v-alert>
+  <v-alert title="Information" type="info">
+    <template #icon>
+      <v-icon name='info' size="24"/>
+      <span class="sr-only">Info</span>
+    </template>
+  Your account was created 👌
+  </v-alert>
+
+
+  <v-alert icon type="info" closable>Info</v-alert>
+  <v-alert icon type="danger" closable>Danger</v-alert>
+  <v-alert icon type="dark" closable>Dark</v-alert>
+  <v-alert icon type="success" closable>Success</v-alert>
+  <v-alert icon closable>Default</v-alert>
+  <v-alert icon type="warning" closable>Warning</v-alert>
 </DemoContainer>
 
 <<< @/components/demo/alert/Basic.vue
@@ -36,7 +45,7 @@ Use any of the available button types to quickly create a styled button.
 
   <v-alert type="info">
     <template #icon>
-      <v-icon name='info'/>
+      <v-icon name='info' size="24"/>
       <span class="sr-only">Info</span>
     </template>
     <template #title>
@@ -59,3 +68,17 @@ Use any of the available button types to quickly create a styled button.
       Info alert! Change a few things up and try submitting again.
     </v-alert>  
 </DemoContainer2>
+
+<Democontainer2>
+  <v-alert type="succes" closable title="Succes" icon>
+    <!-- <template #icon>
+      <v-icon name='info'/>
+      <span class="sr-only">Your account was created 👌</span>
+    </template> -->
+    Info
+  </v-alert>
+  <v-alert type="info" closable>Your account was created 👌</v-alert>
+</Democontainer2>
+
+
+

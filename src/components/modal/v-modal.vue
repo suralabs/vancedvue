@@ -4,8 +4,8 @@
 			<div class="bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-40"></div>
 			<div 
 				@click.self="closeModal" 
-				@keydown.esc="$emit('close')" 
-				@keup.esc="$emit('close')"
+				@keydown.esc="$emit('onDismissed')" 
+				@keup.esc="$emit('onDismissed')"
 			 	class="modal overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full justify-center items-center flex"
 			>
 				<div :class="modalSize()">
@@ -15,9 +15,6 @@
 								<div class="flex items-center text-lg">{{ title }}</div>
 								<button @click="closeModal()" aria-label="close" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
 									<v-icon name="close" />
-									<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-										<path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-									</svg>
 								</button>
 							</slot>
 						</div>
@@ -49,7 +46,10 @@ export default {
 		show: Boolean,
 		modalName: String,
 		title: 'Title',
-		close: 'Close',
+		close: {
+      type: String,
+      default: 'Close'
+    },
 		size: String,
 		notEscapable: false,
   	persistent: false,
@@ -75,7 +75,7 @@ export default {
   },
 	methods: {
 		closeModal(){
-			this.$emit('close')
+			this.$emit('onDismissed')
 		},
     closeWithEsc(e) {
       if (this.show && e.key === 'Escape') {

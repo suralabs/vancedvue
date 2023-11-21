@@ -78,6 +78,15 @@
   <svg v-if="(name == 'warning')" :class="class" :width="size" :height="size" viewBox="0 0 40 40">
     <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM21.6667 28.3333H18.3334V25H21.6667V28.3333ZM21.6667 21.6666H18.3334V11.6666H21.6667V21.6666Z"/>
   </svg>
+  <svg v-if="(name == 'danger')" :class="class" :width="size" :height="size" viewBox="0 0 40 40">
+    <path d="M20 3.33331C10.8 3.33331 3.33337 10.8 3.33337 20C3.33337 29.2 10.8 36.6666 20 36.6666C29.2 36.6666 36.6667 29.2 36.6667 20C36.6667 10.8 29.2 3.33331 20 3.33331ZM21.6667 28.3333H18.3334V25H21.6667V28.3333ZM21.6667 21.6666H18.3334V11.6666H21.6667V21.6666Z"/>
+  </svg>
+  <svg v-if="(name == 'success')" :class="class" :width="size" :height="size"  fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+  </svg>
+  <svg v-if="(name == 'dark')" :class="class" :width="size" :height="size" fill="currentColor" viewBox="0 0 20 20">
+    <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+  </svg>
   <svg v-if="(name == 'anchor')" stroke="currentColor" fill="currentColor" stroke-width="0"
     viewBox="0 0 16 16" :class="class" :width="size" :height="size">
     <path
@@ -94,10 +103,10 @@
       clip-rule="evenodd"
     />
   </svg>
-  <svg v-if="(name == 'close')" :class="class" :width="size" :height="size" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+  <svg v-if="name == 'close'" :class="class" :width="size" :height="size" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
     <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
   </svg>
-  <svg v-if="(name == 'view')" :class="class" :width="size" :height="size" fill="currentColor" viewBox="0 0 20 14">
+  <svg v-if="name == 'view'" :class="class" :width="size" :height="size" fill="currentColor" viewBox="0 0 20 14">
     <path d="M10 0C4.612 0 0 5.336 0 7c0 1.742 3.546 7 10 7 6.454 0 10-5.258 10-7 0-1.664-4.612-7-10-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z" />
   </svg>  
 </template>

@@ -29,7 +29,7 @@ using form elements from your website users.
 <DemoContainer>
   <v-button @click="showModal = true">Open</v-button>
   <Teleport to="body">
-    <v-modal size="md" :show="showModal" title="Lorem ipsum" @close="showModal = false">
+    <v-modal size="md" :show="showModal" title="Lorem ipsum" @onDismissed="showModal = false">
       <!-- <template #header>
         <div class="flex items-center text-lg"> {{ $t('language.language_selection') }} </div>
         <button @click="showModal = false" aria-label="close" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
@@ -63,19 +63,19 @@ The default value is: `2xl`
   <v-button @click="size3 = true">XL Modal</v-button>
   <v-button @click="size4 = true">5XL Modal</v-button>
   <Teleport to="body">
-    <v-modal size="sm" :show="size1" title="Lorem ipsum" @close="size1 = false">
+    <v-modal size="sm" :show="size1" title="Lorem ipsum" @onDismissed="size1 = false">
     </v-modal>
   </Teleport>  
    <Teleport to="body">
-    <v-modal size="md" :show="size2" title="Lorem ipsum" @close="size2 = false">
+    <v-modal size="md" :show="size2" title="Lorem ipsum" @onDismissed="size2 = false">
     </v-modal>
   </Teleport>  
    <Teleport to="body">
-    <v-modal size="xl" :show="size3" title="Lorem ipsum" @close="size3 = false">
+    <v-modal size="xl" :show="size3" title="Lorem ipsum" @onDismissed="size3 = false">
     </v-modal>
   </Teleport>  
    <Teleport to="body">
-    <v-modal size="5xl" :show="size4" title="Lorem ipsum" @close="size4 = false">
+    <v-modal size="5xl" :show="size4" title="Lorem ipsum" @onDismissed="size4 = false">
     </v-modal>
   </Teleport>  
   
