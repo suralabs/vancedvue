@@ -109,7 +109,7 @@ Use any of the available button types to quickly create a styled button.
 
 | Name          | Type             | Default | Required | Description                                                                                                                   |
 |---------------|------------------|---------|----------|-------------------------------------------------------------------------------------------------------------------------------|
-| `variant`     | String           | default |          | Supported: `default`, `alternative`, `dark`, `light`, `green`, `red`, `link`.                                                 | 
+| `variant`     | String           | default |          | Supported: `default`, `alternative`, `dark`, `light`, `green`, `red`, `link`.                                                 |
 | `type`        | String           | button  |          | Native button type. Supported: `button`, `submit`, `reset`.                                                                   |
 | `class`       | String           |         |          | Native button type. Supported: `button`, `submit`, `reset`.                                                                   |
 | `label`       |                  |         |          |              |

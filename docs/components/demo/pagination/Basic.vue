@@ -1,28 +1,28 @@
 <template>
-    <v-pagination
-      :total-items="totalItems"
-      :current-page="currentPage"
-      :per-page="perPage"
-      @page-changed="updateHandler"
-      :go-button="goButton"
-      styled="centered"
-    />    
+  <v-pagination
+    :total-items="totalItems"
+    :current-page="currentPage"
+    :per-page="perPage"
+    :go-button="goButton"
+    styled="centered"
+    @page-changed="updateHandler"
+  />
 </template>
 
 <script>
 export default {
-  	data() {
-		return {
-			totalItems: 79,
+  data() {
+    return {
+      totalItems: 79,
       currentPage: 3,
       perPage: 7,
       goButton: false,
-		}
-	},
+    };
+  },
   methods: {
-    updateHandler($event){
-      this.currentPage = $event
-    }
-  }
-}
+    updateHandler($event) {
+      this.currentPage = $event;
+    },
+  },
+};
 </script>

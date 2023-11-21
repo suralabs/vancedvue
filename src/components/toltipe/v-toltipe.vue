@@ -36,14 +36,16 @@ export default {
       type: String,
       default: 'is-top',
       validator(value) {
-        return ['is-top', 'is-bottom', 'is-left', 'is-right'].indexOf(value) > -1
+        return (
+          ['is-top', 'is-bottom', 'is-left', 'is-right'].indexOf(value) > -1
+        );
       },
     },
     size: {
       type: String,
       default: 'is-medium',
       validator(value) {
-        return ['is-small', 'is-medium', 'is-large'].indexOf(value) > -1
+        return ['is-small', 'is-medium', 'is-large'].indexOf(value) > -1;
       },
     },
   },
@@ -58,8 +60,7 @@ export default {
       hasPosition: this.position || 'is-top',
       hasSize: this.size || 'is-medium',
       // $Tooltip: any
-
-    }
+    };
   },
   computed: {
     dynamicStyles() {
@@ -80,60 +81,60 @@ export default {
         //   this.$Tooltip && this.$Tooltip.hasOwnProperty('fontWeight')
         //     ? this.$Tooltip.fontWeight
         //     : null,
-      }
+      };
     },
   },
   watch: {
     label: {
       handler(value) {
-        this.labelText = value
+        this.labelText = value;
       },
       immediate: true,
     },
     active: {
       handler(value) {
-        this.isActive = value
+        this.isActive = value;
       },
       immediate: true,
     },
     sticky: {
       handler(value) {
-        this.isSticky = value
+        this.isSticky = value;
       },
       immediate: true,
     },
     multiline: {
       handler(value) {
-        this.isMultiline = value
+        this.isMultiline = value;
       },
       immediate: true,
     },
     underlined: {
       handler(value) {
-        this.isUnderlined = value
+        this.isUnderlined = value;
       },
       immediate: true,
     },
     abbreviation: {
       handler(value) {
-        this.isAbbreviation = value
+        this.isAbbreviation = value;
       },
       immediate: true,
     },
     position: {
       handler(value) {
-        this.hasPosition = value
+        this.hasPosition = value;
       },
       immediate: true,
     },
     size: {
       handler(value) {
-        this.hasSize = value
+        this.hasSize = value;
       },
       immediate: true,
     },
   },
-}
+};
 </script>
 
 <style>
@@ -288,7 +289,9 @@ export default {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 86ms ease-out, visibility 86ms ease-out;
+  transition:
+    opacity 86ms ease-out,
+    visibility 86ms ease-out;
 }
 
 .custom-tooltip:before {

@@ -1,17 +1,17 @@
 <!-- :dismissible="dismissible" -->
 <template>
-  <vAlert 
-    closable 
-    icon 
+  <vAlert
+    closable
+    icon
     :type="type"
     :style="styles"
     :duration="duration"
+    :title="title"
     @close="onDismissed"
-    :title="title"    
   >
-  <div v-if="html" v-html="content"></div>
-  <div v-else>{{ content }}</div>
-  </vAlert>    
+    <div v-if="html" v-html="content"></div>
+    <div v-else>{{ content }}</div>
+  </vAlert>
 </template>
 
 <script>
@@ -26,10 +26,9 @@ const WIDTH = 300;
 const TRANSITION_DURATION = 300;
 
 export default {
-  components: { 
-    // Alert,
+  components: {
     vAlert,
-   },
+  },
   props: {
     title: { type: String, default: undefined },
     content: { type: String, default: undefined },

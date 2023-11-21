@@ -1,12 +1,12 @@
 <template>
   <v-button type="primary" @click="notify">Simplest Notification</v-button>
-  <v-button type="primary" @click="notify2">No Auto-dismiss Notification</v-button>
+  <v-button type="primary" @click="notify2"
+    >No Auto-dismiss Notification</v-button
+  >
 </template>
 
 <script setup>
-import { 
-  Notification
- } from 'vancedvue';
+import { Notification } from 'vancedvue';
 
 // example with callback
 // pass a String as the notification content
@@ -29,4 +29,3 @@ function notify2() {
   });
 }
 </script>
-

@@ -3,7 +3,7 @@ import * as directives from './directives';
 import * as services from './services';
 import locale from './locale';
 
-import './index.css'
+import './index.css';
 
 export const install = (app, options = {}) => {
   // Setup language, en-US for default

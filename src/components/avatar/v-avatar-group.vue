@@ -1,7 +1,5 @@
 <template>
   <div class="flex -space-x-4">
-    <slot>
-  
-    </slot>
+    <slot> </slot>
   </div>
 </template>
