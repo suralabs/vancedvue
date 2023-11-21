@@ -1,6 +1,6 @@
 {
   "name": "vancedvue",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Bootstrap 3 components implemented by Vue.",
   "author": "wxsm",
   "main": "./dist/vancedvue.umd.js",
@@ -25,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/suralabs/vancedvue/issues"
   },
-  "homepage": "https://vancedvue.wxsm.space",
+  "homepage": "vancedvue.vercel.app",
   "scripts": {
     "start": "npm run dev",
     "dev": "npm run docs:dev",
@@ -117,9 +117,9 @@
     "not ie <= 8"
   ],
   "keywords": [
-    "Bootstrap",
-    "Bootstrap 3",
-    "Bootstrap for Vue",
+    "Tailwind",
+    "Tailwindcss",
+    "Tailwindcss for Vue",
     "SSR",
     "Web",
     "Components",
@@ -131,19 +131,9 @@
     "vue-strap",
     "vuestrap",
     "CSS",
-    "Affix",
-    "MessageBox",
     "Notification",
-    "ScrollSpy",
     "Alert",
     "Button",
-    "Button group",
-    "Breadcrumbs",
-    "Carousel",
-    "Slider",
-    "Collapse",
-    "Dropdown",
-    "Nav",
     "Modal",
     "Navbar",
     "Pagination",
