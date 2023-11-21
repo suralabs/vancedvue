@@ -17,17 +17,12 @@ hero:
       link: https://github.com/suralabs/vancedvue
 
 features:
-- icon: <svg width="32" height="32"><path fill="#41b883" d="M24.4 3.925H30l-14 24.15L2 3.925h10.71l3.29 5.6 3.22-5.6Z"/><path fill="#41b883" d="m2 3.925 14 24.15 14-24.15h-5.6L16 18.415 7.53 3.925Z"/><path fill="#35495e" d="M7.53 3.925 16 18.485l8.4-14.56h-5.18L16 9.525l-3.29-5.6Z"/></svg>
-  title: Vue 3 supported.
-  details: Easy to use and upgrade.
-- icon: ✨
-  title: Lightweight
-  details: All components ~20KB Gziped, no extra CSS file. Individually import is also supported.
-- icon: ⚡
-  title: Clean and elegant
-  details: We do not wrap everything, just those you really needed.
-- icon: 🚀
-  title: Ready for App
-  details: Not only Bootstrap components, but also something not included in Bootstrap, like Notification, Date-Picker...
+  - title: Vue 3 components 🧱
+    details: Use hundreds of open-source components such as navbars, modals, and dropdowns based on Vue 3 and Tailwind CSS.
+  - title: Based on Tailwind CSS 💨
+    details: The components are based on the utility classes from Tailwind CSS and you can use them to further customize the interface.
+  - title: Powered by Flowbite 🚀
+    details: The Flowbite Vue library is based on the original Flowbite component library using vanilla JavaScript.
+  - title: Open-source community ❤️
+    details: Thousands of developers actively use the components from Flowbite Vue to power their applications.
 ---
-
