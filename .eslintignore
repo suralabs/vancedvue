@@ -1,3 +1,4 @@
 *.md
 docs/.vitepress/dist
+docs/.vitepress/cacge
 !docs/.vitepress

@@ -116,9 +116,11 @@ const props = defineProps({
   },
 })
 
+/* eslint-enable no-alert, no-console */
 const emit = defineEmits<{
-  (event: 'page-changed', id: number): void
+  (event: 'page-changed', id: number): void //eslint-disable-line no-alert, no-console
 }>()
+/* eslint-disable */
 
 const pageInput = ref<number>(1)
 
