@@ -20,16 +20,14 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: 📥 Install deps
         run: yarn     
-    - name: Install semantic-release extra plugins
-      run: yarn add --save-dev @semantic-release/changelog @semantic-release/git      
-    - name: Lint
-      run: yarn run lint:fix 
-    # - name: Test
-    #   run: npm run test:unit --if-present
-    - name: Build
-      run: yarn run dist      
-    - name: Release
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-      run: npx semantic-release
+      - name: Install semantic-release extra plugins
+        run: yarn add --save-dev @semantic-release/changelog @semantic-release/git      
+      - name: Lint
+        run: yarn run lint:fix 
+      - name: Build
+        run: yarn run dist      
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx semantic-release
