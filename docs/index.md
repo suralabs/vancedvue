@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: vancedvue
-  text: Fully styled and customizable components for Vue 3.
+  text: Fully styled and customizable components for Vue 3
   # tagline: 
   # image:
   #   src: /assets/image/logo.png
