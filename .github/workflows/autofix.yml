@@ -1,0 +1,28 @@
+name: autofix.ci
+
+on:
+  pull_request:
+permissions:
+  contents: read
+
+jobs:
+  autofix:
+    runs-on: ubuntu-latest
+    env:
+      PUPPETEER_SKIP_DOWNLOAD: 'true'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v3
+        with:
+          cache: yarn
+          node-version: 18.x
+          registry-url: 'https://registry.npmjs.org'
+      - name: 📥 Install deps
+        run: yarn
+
+      - name: Lint
+        run: yarn run lint:fix
+
+      - uses: autofix-ci/action@bee19d72e71787c12ca0f29de72f2833e437e4c9

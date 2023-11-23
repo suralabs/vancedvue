@@ -2,12 +2,13 @@ const path = require('path');
 
 module.exports = {
   title: 'VancedVue',
-  description: 'Bootstrap 3 components implemented by Vue.',
+  description: 'uo components implemented by Vue.',
+  base: '/',
   themeConfig: {
     search: {
       provider: 'local',
     },
-    repo: 'https://github.com/suralabs/vancedvue',
+    repo: 'semyon492/vancedvue',
     nav: navbar(),
     sidebar: {
       '/usage/': usageSidebar(),

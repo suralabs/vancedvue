@@ -7,24 +7,19 @@ on:
 jobs:
 
   release:
-
     runs-on: ubuntu-latest
     permissions:
-      contents: write
-    
+      contents: write    
     outputs:
       created: ${{ steps.release.outputs.created }}
       version: ${{ steps.release.outputs.version }}
-
     steps:
-
       - name: Checkout repository
         uses: actions/checkout@v3
-
       - name: Release
         id: release
         uses: fdiesel/github-action-node-release@v4.1.5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          prefix: v # (optional) default none
+          prefix:  # (optional) default none
           path: ./package.json # (optional) default ./package.json
