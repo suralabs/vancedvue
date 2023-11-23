@@ -13,14 +13,16 @@ jobs:
         with:
           fetch-depth: 0
           ref: main
-      - uses: actions/setup-node@v3
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v3
         with:
-          node-version: 16
+          cache: yarn
+          node-version: 18.x
           registry-url: 'https://registry.npmjs.org'
-      - name: Install
-        run: npm install         
+      - name: 📥 Install deps
+        run: yarn    
       - name: Build
-        run: npm run docs:build
+        run: yarn run docs:build
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.2.0
         env:
