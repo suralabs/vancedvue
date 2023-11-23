@@ -8,6 +8,7 @@ on:
 jobs:
   bump-version:
     name: 'Bump Version on master'
+    if: github.repository == 'suralabs/vancedvue' 
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout repo
