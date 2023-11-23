@@ -43,6 +43,8 @@ Use any of the available button types to quickly create a styled button.
   <v-button color="pink" pill>Pink</v-button>
 </DemoContainer2>
 
+## Colors
+
 <DemoContainer2>
   <v-button color="cyan-blue">cyan-blue</v-button>
   <v-button color="green-blue">green-blue</v-button>
@@ -52,6 +54,8 @@ Use any of the available button types to quickly create a styled button.
   <v-button color="red-yellow">red-yellow</v-button>
   <v-button color="teal-lime">teal-lime</v-button>
 </DemoContainer2>
+
+## Icon
 
 <DemoContainer2>
   <v-button color="cyan-blue">
@@ -76,6 +80,8 @@ Use any of the available button types to quickly create a styled button.
     <v-icon name="analytics" />
   </v-button>
 </DemoContainer2>
+
+## prefix-sufix icon
 
 <DemoContainer2>
   <v-button class="flex" color="cyan-blue">
