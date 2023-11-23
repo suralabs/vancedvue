@@ -1,4 +1,4 @@
-# Badge
+# Icon
 
 > Display a short text to represent a status or a category.
 

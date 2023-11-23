@@ -1,10 +1,12 @@
-# Getting Started
+# VancedVue - Quickstart
 
-**vancedvue** is a Bootstrap 3 component lib implemented by Vue.
+Get started with VancedVue by including it into your project using NPM
 
-* **Lightweight**
-  * All components **~20KB** Gziped.
-  * No extra CSS file.
+> VancedVue is a library of components built on top of the utility-classes from Tailwind CSS and it also includes a JavaScript file that makes interactive elements works, such as modals, dropdowns, and more. Learn how to get started by following this quickstart guide.
+
+<!-- * **Lightweight** -->
+  <!-- * All components **~20KB** Gziped. -->
+  <!-- * No extra CSS file. -->
   * Individually import supported.
 * **Vue 3** supported.
 * **SSR** (server-side rendering) supported.
@@ -17,9 +19,7 @@
 
 | vancedvue version | Vue.js version | document                                               |
 |-------------|----------------|--------------------------------------------------------|
-| 2.x         | 3.x            | [https://github.com/suralabs/vancedvue](https://github.com/suralabs/vancedvue)       |
 | 1.x         | 2.x            | [https://github.com/suralabs/vancedvue](https://github.com/suralabs/vancedvue) |
-| 0.x         | 2.x            | [https://github.com/suralabs/vancedvue](https://github.com/suralabs/vancedvue) |
 
 ## Install
 
@@ -45,9 +45,9 @@ app.mount(...)
 
 That's it. Happy coding!
 
-::: warning
+<!-- ::: warning
 The vancedvue lib is meant to be a replacement of bootstrap js files. Therefore, include the css file of bootstrap, but not js files, such as the `bootstrap.min.js`, which should not be included. Otherwise, you might encounter some unexpected issues.
-:::
+::: -->
 
 ### No conflict
 
@@ -105,4 +105,4 @@ This will simply load the latest version of `vancedvue.umd.js` into your page. F
 
 ## Browser compatibility
 
-All browsers supported by [Vue](https://github.com/vuejs/vue-next) and [Bootstrap 3 CSS](https://github.com/twbs/bootstrap) are supposed to be also supported by this lib.
+All browsers supported by [Vue](https://github.com/vuejs/vue-next) and [Tailwind CSS](https://tailwindcss.com) are supposed to be also supported by this lib.

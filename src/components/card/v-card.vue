@@ -1,7 +1,3 @@
-<template>
-	
-</template>
-
 <script>
 export default {
   name: 'Modal',
@@ -10,6 +6,5 @@ export default {
     return {};
   },
   methods: {},
-  async mounted() {},
 };
 </script>

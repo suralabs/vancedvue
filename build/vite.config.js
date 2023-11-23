@@ -16,7 +16,8 @@ export default defineConfig({
       entry: resolve(__dirname, `../src/${VANCEDVUE_ENTRY || 'index.js'}`),
       name: VANCEDVUE_ENTRY ? undefined : 'vancedvue',
       formats: VANCEDVUE_ENTRY ? ['es'] : ['cjs', 'es', 'iife', 'umd'],
-      fileName: (format) => (VANCEDVUE_FILENAME ? VANCEDVUE_FILENAME : `vancedvue.${format}.js`),
+      fileName: (format) =>
+        VANCEDVUE_FILENAME ? VANCEDVUE_FILENAME : `vancedvue.${format}.js`,
     },
     rollupOptions: {
       // make sure to externalize deps that shouldn't be bundled

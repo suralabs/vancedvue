@@ -18,7 +18,7 @@ export default {
   }
 }
 </script>
-# Alert
+# Pagination
 
 > Display an alert element to draw attention.
 

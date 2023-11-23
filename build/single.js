@@ -42,7 +42,9 @@ function e(command, options) {
       env: {
         ...process.env,
         VANCEDVUE_ENTRY: file,
-        VANCEDVUE_FILENAME: `${prefix + file.split('/').pop().split('.')[0]}.js`,
+        VANCEDVUE_FILENAME: `${
+          prefix + file.split('/').pop().split('.')[0]
+        }.js`,
       },
     });
   }
