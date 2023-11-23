@@ -30,6 +30,8 @@ Use any of the available button types to quickly create a styled button.
   <v-button size="xl">Default</v-button>
 </DemoContainer>
 
+## Colors
+
 <DemoContainer2>
   <v-button color="default" pill>Default</v-button>
   <v-button color="alternative" pill>Alternative</v-button>
