@@ -27,6 +27,7 @@
   },
   "homepage": "vancedvue.vercel.app",
   "scripts": {
+    "build": "npm run dist --",
     "dist": "vite build -c build/vite.config.js && node build/single.js",
     "lint": "eslint --ext .js,.vue src build docs/.vitepress",
     "lint:fix": "npm run lint -- --fix",
