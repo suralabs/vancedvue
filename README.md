@@ -10,7 +10,7 @@
   </p>
   <p>
     <a href="https://github.com/suralabs/vancedvue">
-      <img src="https://github.com/suralabs/vancedvue/actions/workflows/lint.yaml/badge.svg" alt="Lint">
+      <img src="https://github.com/suralabs/vancedvue/actions/workflows/build.yaml/badge.svg" alt="Build">
     </a>
     <a href="https://www.npmjs.com/package/vancedvue">
       <img src="https://badgen.net/npm/dm/vancedvue" alt="NPM Downloads">
