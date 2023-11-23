@@ -8,6 +8,7 @@ on:
 jobs:
   publish_github:
     runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'suralabs' }}
     steps:
       - uses: actions/checkout@v3
       - name: ⎔ Setup node
