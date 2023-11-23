@@ -17,12 +17,8 @@ jobs:
         with:
           node-version: 16
           registry-url: 'https://registry.npmjs.org'
-      - uses: pnpm/action-setup@v2.4.0
-        with:
-          version: 7.5.2
-          run_install: true
       - name: Build
-        run: pnpm run docs:build
+        run: npm run docs:build
       - name: GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.2.0
         env:
