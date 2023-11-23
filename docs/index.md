@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: vancedvue
-  text: Fully styled and customizable components for Vue 3
+  name: VancedVue
+  text: Set of Lightview and fully customizable Vue Components optimized for TailwindCss
   # tagline: 
   # image:
   #   src: /assets/image/logo.png
