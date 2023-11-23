@@ -1,14 +1,11 @@
 name: Bump Package Version On Merge
 
 on:
-  pull_request:
-    branches:
-      - main
+  - push
 
 jobs:
  bump-package-version:
  # Only run if the PR closed by merging
-  if: github.event.pull_request.merged == true
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
