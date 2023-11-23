@@ -1,4 +1,4 @@
-# Alert
+# Dropdown
 
 > Display an alert element to draw attention.
 

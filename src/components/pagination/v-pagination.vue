@@ -64,7 +64,6 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue';
-
 const props = defineProps({
   currentPage: {
     type: Number,
@@ -115,12 +114,9 @@ const props = defineProps({
     default: true
   },
 })
-
-/* eslint-enable no-alert, no-console */
 const emit = defineEmits<{
   (event: 'page-changed', id: number): void //eslint-disable-line no-alert, no-console
 }>()
-/* eslint-disable */
 
 const pageInput = ref<number>(1)
 
@@ -185,7 +181,7 @@ const listSizeClasses = {
 
 //style
 const classesPage = (page: number) => {
-  if(page === props.currentPage){
+  if (page === props.currentPage){
     return [
       listSizeClasses[props.size],
       `flex items-center justify-center leading-tight `,

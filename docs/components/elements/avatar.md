@@ -1,4 +1,4 @@
-# Alert
+# Avatar
 
 > Display an alert element to draw attention.
 
