@@ -5,7 +5,7 @@ name: npm-publish
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ github.repository_owner == 'suralabs' }}
+    # if: ${{ github.repository_owner == 'suralabs' }}
     steps:
       - uses: actions/checkout@v3
       - name: ⎔ Setup node
@@ -16,7 +16,10 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
       - name: 📥 Install deps
         run: yarn
-      - run: yarn run docs:build
+      - name:  'Automated Version Bump'
+        uses:  'maks-stupak/gh-action-bump-version@v7.1.5'
+        with:
+          tag-prefix:  ''
       - run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
