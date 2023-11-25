@@ -7,7 +7,7 @@ jobs:
   autofix:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - uses: actions/setup-node@v1
       with:
         node-version: '18'
@@ -15,12 +15,5 @@ jobs:
       run: npm install
     - name: Lint & fix
       run: npx eslint --ext .js,.vue src build docs/.vitepress --fix
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v3
-      with:
-        branch: ${{ github.ref_name }}-autofix
-        reviewers: ${{ github.actor }}
-        labels: autofix
-        delete-branch: true
-        title: "Improve codestyle"
-        body: "Automated PR to improve codestyle"
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
