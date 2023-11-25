@@ -9,9 +9,7 @@
       <div
         class="w-10 flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none overflow-hidden"
       >
-        <slot name="prefix">
-          <!-- <v-icon class="w-5 h-5 text-gray-500 dark:text-gray-400" :type="icon" size="16" /> -->
-        </slot>
+        <slot name="prefix"></slot>
       </div>
       <input
         :placeholder="placeholder"
@@ -59,8 +57,6 @@
 </template>
 
 <script>
-// import Icon from './v-icon.vue'
-
 export default {
   name: 'CustomInput',
   props: {
@@ -83,9 +79,6 @@ export default {
     },
   },
   emits: ['update:modelValue'],
-  // components: {
-  // 	Icon,
-  // },
   data() {
     return {
       error: '',

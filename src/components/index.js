@@ -8,3 +8,4 @@ export { default as VInput } from './input/v-input.vue';
 export { default as VModal } from './modal/v-modal.vue';
 export { default as VDropdown } from './dropdown/v-dropdown.vue';
 export { default as VPagination } from './pagination/v-pagination.vue';
+export { default as VToltip } from './toltip/v-toltip.vue';

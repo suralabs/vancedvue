@@ -1,6 +1,6 @@
 <template>
-  <v-button type="primary" @click="notify">Simplest Notification</v-button>
-  <v-button type="primary" @click="notify2"
+  <v-button type="primary" pill @click="notify">Simplest Notification</v-button>
+  <v-button type="primary" pill @click="notify2"
     >No Auto-dismiss Notification</v-button
   >
 </template>

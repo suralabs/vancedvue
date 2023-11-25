@@ -9,6 +9,9 @@ module.exports = {
       provider: 'local',
     },
     repo: 'semyon492/vancedvue',
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/suralabs/vancedvue' },
+    ],
     nav: navbar(),
     sidebar: {
       '/usage/': usageSidebar(),
@@ -36,18 +39,18 @@ function navbar() {
       link: '/components/components',
       activeMatch: '^/components/',
     },
-    { text: 'Funding', link: '/funding/' },
+    // { text: 'Funding', link: '/funding/' },
     {
       text: 'Versions',
       items: [
         { text: '1.x', link: 'https://github.com/suralabs/vancedvue' },
-        { text: '0.x', link: 'https://github.com/suralabs/vancedvue' },
+        // { text: '0.x', link: 'https://github.com/suralabs/vancedvue' },
       ],
     },
-    {
-      text: 'Changelog',
-      link: 'https://github.com/suralabs/vancedvue/releases',
-    },
+    // {
+    //   text: 'Changelog',
+    //   link: 'https://github.com/suralabs/vancedvue/releases',
+    // },
   ];
 }
 
@@ -98,6 +101,7 @@ function componentSidebar() {
       items: [
         { text: 'Modal', link: '/components/overlays/modal' },
         { text: 'Notification', link: '/components/overlays/notification' },
+        { text: 'Toltip', link: '/components/overlays/toltip' },
         // { text: 'Messagebox', link: '/components/overlays/messagebox' },
         // { text: 'Typeahead', link: '/components/typeahead' },
         // { text: 'Date Picker', link: '/components/date-picker' },
