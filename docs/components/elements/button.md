@@ -43,7 +43,7 @@ Use any of the available button types to quickly create a styled button.
   <v-button color="pink" pill>Pink</v-button>
 </DemoContainer2>
 
-## Colors
+## Gradient
 
 <DemoContainer2>
   <v-button color="cyan-blue">cyan-blue</v-button>
@@ -81,7 +81,9 @@ Use any of the available button types to quickly create a styled button.
   </v-button>
 </DemoContainer2>
 
-## prefix-sufix icon
+## Icon - Text
+
+If you need a button with text and icon you can do them by adding them in the slot `prefix` or `suffix`.
 
 <DemoContainer2>
   <v-button class="flex" color="cyan-blue">

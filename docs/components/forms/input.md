@@ -1,18 +1,17 @@
 # Input
 
-> Display a short text to represent a status or a category.
-
 ## Examples
 
+Add an elements input facilitate with the component `<vs-input>`
+
 <DemoContainer>
-  <v-input label="video" modelValue="video" type="text" />
+  <v-input modelValue="video" type="text" />
 </DemoContainer>
 
 <<< @/components/demo/input/Basic.vue
 
-#### Props
+## Label
 
-#### Slots
-
-#### Events
-
+<DemoContainer>
+  <v-input label="Password" modelValue="password" type="text" />
+</DemoContainer>

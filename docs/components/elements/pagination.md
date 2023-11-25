@@ -20,11 +20,9 @@ export default {
 </script>
 # Pagination
 
-> Display an alert element to draw attention.
-
 ## Examples
 
-Use any of the available button types to quickly create a styled button.
+Easily add a pagination with the `v-pagination` component
 
 <DemoContainer>
   <v-pagination
@@ -39,16 +37,7 @@ Use any of the available button types to quickly create a styled button.
 
 <<< @/components/demo/pagination/Basic.vue
 
-<DemoContainer>
-  <v-pagination
-    :totalItems="totalItems"
-    :currentPage="currentPage"
-    :perPage="perPage"
-    @pageChanged="updateHandler"
-    :goButton="goButton"
-    styled="centered"
-  />
-</DemoContainer>
+## styled `simple`
 
 <DemoContainer>
   <v-pagination
@@ -60,6 +49,10 @@ Use any of the available button types to quickly create a styled button.
     styled="simple"
   />
 </DemoContainer>
+
+## Custom `prev` and `next` buttons
+
+### Icon 
 
 <DemoContainer>
   <v-pagination
@@ -75,6 +68,8 @@ Use any of the available button types to quickly create a styled button.
   </v-pagination>
 </DemoContainer>
 
+### Text
+
 <DemoContainer>
   <v-pagination
     :totalItems="totalItems"
@@ -88,6 +83,8 @@ Use any of the available button types to quickly create a styled button.
     <template #next>Next</template>
   </v-pagination>
 </DemoContainer>
+
+## Size
 
 <DemoContainer>
   <v-pagination
@@ -118,6 +115,8 @@ Use any of the available button types to quickly create a styled button.
   />
 </DemoContainer>
 
+## Label
+
 <DemoContainer>
   <v-pagination
     :totalItems="totalItems"
@@ -129,10 +128,3 @@ Use any of the available button types to quickly create a styled button.
     :Label="Label"
   />
 </DemoContainer>
-
-#### Props
-
-#### Slots
-
-#### Events
-

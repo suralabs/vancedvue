@@ -4,7 +4,6 @@
   </span>
 </template>
 <script>
-// import { sizeable } from "./mixins";
 export default {
   props: {
     class: {
@@ -16,7 +15,6 @@ export default {
       default: 'default',
     },
   },
-  // mixins: [sizeable],
   data() {
     return {
       class_name: {

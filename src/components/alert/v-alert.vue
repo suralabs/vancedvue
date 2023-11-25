@@ -9,7 +9,7 @@
         </div>
         <div class="ml-3 w-0 flex-1 pt-0.5">
           <p class="font-semibold">
-            {{ title || type }}
+            {{ title }}
           </p>
           <p class="text-sm font-semibold">
             <slot name="default" :on-close-click="onCloseClick" />

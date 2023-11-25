@@ -5,7 +5,7 @@ import { resolve } from 'path';
 
 const { VANCEDVUE_ENTRY, VANCEDVUE_FILENAME } = process.env;
 
-console.log('env:', VANCEDVUE_ENTRY, VANCEDVUE_FILENAME);
+// console.log('env:', VANCEDVUE_ENTRY, VANCEDVUE_FILENAME);
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,7 +15,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, `../src/${VANCEDVUE_ENTRY || 'index.js'}`),
       name: VANCEDVUE_ENTRY ? undefined : 'vancedvue',
-      formats: VANCEDVUE_ENTRY ? ['es'] : ['cjs', 'es', 'iife', 'umd'],
+      formats: VANCEDVUE_ENTRY ? ['es'] : ['es', 'iife', 'umd'],
       fileName: (format) =>
         VANCEDVUE_FILENAME ? VANCEDVUE_FILENAME : `vancedvue.${format}.js`,
     },

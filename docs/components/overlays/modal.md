@@ -27,7 +27,7 @@ using form elements from your website users.
 ## Examples
 
 <DemoContainer>
-  <v-button @click="showModal = true">Open</v-button>
+  <v-button pill @click="showModal = true">Open</v-button>
   <Teleport to="body">
     <v-modal size="md" :show="showModal" title="Lorem ipsum" @onDismissed="showModal = false">
       <!-- <template #header>
@@ -81,9 +81,4 @@ The default value is: `2xl`
   
 </DemoContainer>
 
-#### Props
-
-#### Slots
-
-#### Events
 
