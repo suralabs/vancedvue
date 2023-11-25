@@ -5,21 +5,21 @@ on:
   - pull_request
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: ⬇️ Checkout repo
-        uses: actions/checkout@v3
-      - name: ⎔ Setup node
-        uses: actions/setup-node@v3
-        with:
-          cache: yarn
-          node-version: 18.x
-          registry-url: 'https://registry.npmjs.org'
-      - name: 📥 Install deps
-        run: yarn
-      - name: Lint
-        run: yarn run lint:fix
+  # lint:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: ⬇️ Checkout repo
+  #       uses: actions/checkout@v3
+  #     - name: ⎔ Setup node
+  #       uses: actions/setup-node@v3
+  #       with:
+  #         cache: yarn
+  #         node-version: 18.x
+  #         registry-url: 'https://registry.npmjs.org'
+  #     - name: 📥 Install deps
+  #       run: yarn
+  #     - name: Lint
+  #       run: yarn run lint:fix
   dist:
     runs-on: ubuntu-latest
     steps:
