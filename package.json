@@ -1,6 +1,6 @@
 {
   "name": "vancedvue",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Fully styled and customizable components for Vue 3",
   "author": "suralabs",
   "main": "./dist/vancedvue.umd.js",
