@@ -29,8 +29,8 @@
   "scripts": {
     "build": "vitepress build docs",
     "dist": "vite build -c build/vite.config.js && node build/single.js",
-    "lint": "eslint --ext .js,.vue src build docs/.vitepress",
-    "lint:fix": "npm run lint -- --fix",
+    "lint": "yarn run eslint --ext .js,.vue src build docs/.vitepress",
+    "lint:fix": "yarn run lint -- --fix",
     "docs:preview": "vitepress preview docs",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs"

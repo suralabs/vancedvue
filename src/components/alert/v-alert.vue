@@ -79,7 +79,7 @@ export default {
         warning: 'text-yellow-800 dark:text-yellow-300',
       };
       return [
-        'bg-white dark:bg-gray-800 ring-black',
+        'z-40 bg-white dark:bg-gray-800 ring-black',
         textColors[this.type],
         'w-full max-w-sm mt-4 overflow-hidden rounded-lg shadow-lg pointer-events-auto ring-1 ring-opacity-5',
       ];
