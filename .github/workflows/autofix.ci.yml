@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: ⬇️ Checkout repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
       - name: ⎔ Setup node
         uses: actions/setup-node@v3
         with:
@@ -16,8 +16,8 @@ jobs:
           node-version: 18.x
           registry-url: 'https://registry.npmjs.org'
       - name: 📥 Install deps
-        run: yarn
+        run: yarn install
       - name: Lint & fix
         run: yarn run eslint --ext .js,.vue src build docs/.vitepress --fix
-        - name: Create Pull Request
-          uses: peter-evans/create-pull-request@v5
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v5
