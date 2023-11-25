@@ -8,18 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: ⎔ Setup node
-      uses: actions/setup-node@v3
+    - uses: actions/setup-node@v1
       with:
-        cache: yarn
-        node-version: 18.x
-        registry-url: 'https://registry.npmjs.org'
-    - name: 📥 Install deps
-      run: yarn
-    - name: Lint
-      run: yarn run eslint --ext .js,.vue src build docs/.vitepress --fix
+        node-version: '18'
+    - name: Install dependencies
+      run: npm install
+    - name: Lint & fix
+      run: npx eslint --ext .js,.vue src build docs/.vitepress --fix
     - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v5
+      uses: peter-evans/create-pull-request@v3
       with:
         branch: ${{ github.ref_name }}-autofix
         reviewers: ${{ github.actor }}
