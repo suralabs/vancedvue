@@ -7,13 +7,23 @@ jobs:
   autofix:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 16
-
-      - run: npm install
-      - run: npm ci
-      - run: npx prettier --write .
-
-      - uses: autofix-ci/action@d3e591514b99d0fca6779455ff8338516663f7cc
+    - uses: actions/checkout@v2
+    - name: ⎔ Setup node
+      uses: actions/setup-node@v3
+      with:
+        cache: yarn
+        node-version: 18.x
+        registry-url: 'https://registry.npmjs.org'
+    - name: 📥 Install deps
+      run: yarn
+    - name: Lint
+      run: yarn run eslint --ext .js,.vue src build docs/.vitepress --fix
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v5
+      with:
+        branch: ${{ github.ref_name }}-autofix
+        reviewers: ${{ github.actor }}
+        labels: autofix
+        delete-branch: true
+        title: "Improve codestyle"
+        body: "Automated PR to improve codestyle"
