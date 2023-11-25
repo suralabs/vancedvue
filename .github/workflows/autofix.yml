@@ -6,21 +6,13 @@ on:
 jobs:
   autofix:
     runs-on: ubuntu-latest
-    env:
-      PUPPETEER_SKIP_DOWNLOAD: 'true'
     steps:
       - uses: actions/checkout@v4
-
-      - name: ⎔ Setup node
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
-          cache: yarn
-          node-version: 18.x
-          registry-url: 'https://registry.npmjs.org'
-      - name: 📥 Install deps
-        run: yarn
+          node-version: 16
 
-      - name: Lint
-        run: yarn run lint:fix
+      - run: npm ci
+      - run: npx prettier --write .
 
       - uses: autofix-ci/action@d3e591514b99d0fca6779455ff8338516663f7cc
