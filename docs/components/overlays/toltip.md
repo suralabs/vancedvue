@@ -2,8 +2,8 @@
 
 ## Examples
 
-<DemoContainer>
-  <v-toltip label="Default">Default</v-toltip>
-</DemoContainer>
+<SContainer>
+  <SToltip/>
+</SContainer>
 
-<<< @/components/demo/toltip/Basic.vue
+<<< @/.vitepress/components/toltip/SToltip.vue

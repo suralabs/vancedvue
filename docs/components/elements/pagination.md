@@ -24,7 +24,7 @@ export default {
 
 Easily add a pagination with the `v-pagination` component
 
-<DemoContainer>
+<SContainer>
   <v-pagination
     :total-items="totalItems"
     :current-page="currentPage"
@@ -33,13 +33,13 @@ Easily add a pagination with the `v-pagination` component
     :go-button="goButton"
     styled="centered"
   />
-</DemoContainer>
+</SContainer>
 
-<<< @/components/demo/pagination/Basic.vue
+<<< @/.vitepress/components/pagination/SPagination.vue
 
 ## styled `simple`
 
-<DemoContainer>
+<SContainer>
   <v-pagination
     :totalItems="totalItems"
     :currentPage="currentPage"
@@ -48,13 +48,15 @@ Easily add a pagination with the `v-pagination` component
     :goButton="goButton"
     styled="simple"
   />
-</DemoContainer>
+</SContainer>
+
+<<< @/.vitepress/components/pagination/SPaginationSimple.vue
 
 ## Custom `prev` and `next` buttons
 
 ### Icon 
 
-<DemoContainer>
+<SContainer>
   <v-pagination
     :totalItems="totalItems"
     :currentPage="currentPage"
@@ -66,11 +68,13 @@ Easily add a pagination with the `v-pagination` component
     <template #prev>⬅️</template>
     <template #next>➡️</template>
   </v-pagination>
-</DemoContainer>
+</SContainer>
+
+<<< @/.vitepress/components/pagination/SPaginationIcon.vue
 
 ### Text
 
-<DemoContainer>
+<SContainer>
   <v-pagination
     :totalItems="totalItems"
     :currentPage="currentPage"
@@ -82,11 +86,13 @@ Easily add a pagination with the `v-pagination` component
     <template #prev>Previous</template>
     <template #next>Next</template>
   </v-pagination>
-</DemoContainer>
+</SContainer>
+
+<<< @/.vitepress/components/pagination/SPaginationText.vue
 
 ## Size
 
-<DemoContainer>
+<SContainer>
   <v-pagination
     :totalItems="totalItems"
     :currentPage="currentPage"
@@ -113,11 +119,13 @@ Easily add a pagination with the `v-pagination` component
     styled="centered"
     size="xl"
   />
-</DemoContainer>
+</SContainer>
+
+<<< @/.vitepress/components/pagination/SPaginationSize.vue
 
 ## Label
 
-<DemoContainer>
+<SContainer>
   <v-pagination
     :totalItems="totalItems"
     :currentPage="currentPage"
@@ -127,4 +135,6 @@ Easily add a pagination with the `v-pagination` component
     styled="centered"
     :Label="Label"
   />
-</DemoContainer>
+</SContainer>
+
+<<< @/.vitepress/components/pagination/SPaginationLabel.vue

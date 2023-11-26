@@ -4,14 +4,16 @@
 
 Add an elements input facilitate with the component `<vs-input>`
 
-<DemoContainer>
-  <v-input modelValue="video" type="text" />
-</DemoContainer>
+<SContainer>
+  <SInput/>
+</SContainer>
 
-<<< @/components/demo/input/Basic.vue
+<<< @/.vitepress/components/input/SInput.vue
 
 ## Label
 
-<DemoContainer>
-  <v-input label="Password" modelValue="password" type="text" />
-</DemoContainer>
+<SContainer>
+  <SInputLabel/>
+</SContainer>
+
+<<< @/.vitepress/components/input/SInputLabel.vue

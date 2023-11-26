@@ -140,7 +140,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 /* Set defaults */
 .custom-tooltip {
   --custom-tooltip-color: #fff;
