@@ -4,13 +4,11 @@
 
 ## Examples
 
-<DemoContainer>
-  <v-icon name="video" />
-  <v-icon name="photo" />
-  <v-icon name="login" />
-</DemoContainer>
+<SContainer>
+  <SIcon/>
+</SContainer>
 
-<<< @/components/demo/icon/Basic.vue
+<<< @/.vitepress/components/icon/SIcon.vue
 
 #### Props
 

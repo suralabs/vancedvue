@@ -1,11 +1,12 @@
+<!-- eslint-disable vue/attributes-order -->
 <template>
   <v-pagination
     :total-items="totalItems"
     :current-page="currentPage"
     :per-page="perPage"
+    @page-changed="updateHandler"
     :go-button="goButton"
     styled="centered"
-    @page-changed="updateHandler"
   />
 </template>
 

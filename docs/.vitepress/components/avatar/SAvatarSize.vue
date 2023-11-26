@@ -1,0 +1,24 @@
+<template>
+  <div class="flex justify-center items-center space-x-4">
+    <v-avatar
+      size="xs"
+      img="https://avatars.githubusercontent.com/u/22177963?v=4"
+    ></v-avatar>
+    <v-avatar
+      size="sm"
+      img="https://avatars.githubusercontent.com/u/22177963?v=4"
+    ></v-avatar>
+    <v-avatar
+      size="md"
+      img="https://avatars.githubusercontent.com/u/22177963?v=4"
+    ></v-avatar>
+    <v-avatar
+      size="lg"
+      img="https://avatars.githubusercontent.com/u/22177963?v=4"
+    ></v-avatar>
+    <v-avatar
+      size="xl"
+      img="https://avatars.githubusercontent.com/u/22177963?v=4"
+    ></v-avatar>
+  </div>
+</template>

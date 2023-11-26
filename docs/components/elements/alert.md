@@ -14,75 +14,56 @@
 
 ## Examples
 
-<DemoContainer>
-<v-alert>Info</v-alert>
-</DemoContainer>
+<SContainer>
+<SAlert/>
+</SContainer>
 
-<<< @/components/demo/alert/Basic.vue
+<<< @/.vitepress/components/alert/SAlert.vue
 
 ## Colors
 
-<DemoContainer>
-  <v-alert type="info">Info</v-alert>
-  <v-alert type="danger">Danger</v-alert>
-  <v-alert type="dark">Dark</v-alert>
-  <v-alert type="success">Success</v-alert>
-  <v-alert>Default</v-alert>
-  <v-alert type="warning">Warning</v-alert>
-</DemoContainer>
+<SContainer>
+<SAlertColors/>
+</SContainer>
+
+<<< @/.vitepress/components/alert/SAlertColors.vue
 
 ## Icons
 
-<DemoContainer>
-  <v-alert icon type="info">Info</v-alert>
-  <v-alert icon type="success">Your account was created 👌</v-alert>
-</DemoContainer>
+<SContainer>
+<SAlertIcons/>
+</SContainer>
+
+<<< @/.vitepress/components/alert/SAlertIcons.vue
 
 ## Custom icons
 
-<DemoContainer>
-  <v-alert icon type="info">
-      <template #icon>
-      <v-icon name='password' size="24"/>
-      <span class="sr-only">Info</span>
-    </template>
-    Custom icon
-  </v-alert>
-</DemoContainer>
+<SContainer>
+<SAlertIcons2/>
+</SContainer>
+
+<<< @/.vitepress/components/alert/SAlertIcons2.vue
 
 ## Closable
 
-<DemoContainer>
-  <v-alert icon type="info" closable>Info</v-alert>
-</DemoContainer>
+<SContainer>
+<SAlertClosable/>
+</SContainer>
+
+<<< @/.vitepress/components/alert/SAlertClosable.vue
 
 ## Custom title
 
-<DemoContainer>
-  <v-alert icon type="info" closable>
-    <template #title>
-      <h3 class="text-lg font-medium">
-        This is a info alert
-      </h3>
-    </template>    
-  </v-alert>
-</DemoContainer>
+<SContainer>
+<SAlertTitle/>
+</SContainer>
 
-<DemoContainer>
-  <v-alert icon type="info" closable>
-    <template #title>
-      <h3 class="text-lg font-medium">
-        This is a info alert
-      </h3>
-    </template>   
-    <template #default="{ onCloseClick }">
-      <div class="mt-2 mb-4 text-sm">
-        More info about this info alert goes here. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.
-      </div>
-      <div class="flex">
-        <v-button><v-icon name="view"/>View more</v-button>
-        <v-button @click="onCloseClick">Dismiss</v-button>
-      </div>
-    </template>     
-  </v-alert>
-</DemoContainer>
+<<< @/.vitepress/components/alert/SAlertTitle.vue
+
+## Custom content
+
+<SContainer>
+<SAlertContent/>
+</SContainer>
+
+<<< @/.vitepress/components/alert/SAlertContent.vue

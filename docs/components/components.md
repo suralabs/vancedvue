@@ -1,6 +1,5 @@
 # Components
 
-<DemoContainer>
+<!-- <SContainer>
   <v-button variant="default">Default</v-button>
-</DemoContainer>
-
+</SContainer> -->
